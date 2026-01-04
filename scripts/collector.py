@@ -138,8 +138,8 @@ def analyze_video(video_data, transcript):
         except Exception as e:
             print(f"Failed with {name}: {e}")
             if "429" in str(e): # Quota exceeded
-                print("Quota limit hit, waiting 5 seconds before trying next model...")
-                time.sleep(5)
+                print("Quota limit hit, waiting 60 seconds before trying next model...")
+                time.sleep(60)
             continue
             
     return None
