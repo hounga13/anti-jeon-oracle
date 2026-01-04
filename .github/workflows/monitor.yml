@@ -1,9 +1,15 @@
 name: Monitor and Analyze YouTube
 
 on:
+  push:
+    branches:
+      - main
   schedule:
-    - cron: '0 */6 * * *' # Every 6 hours
-  workflow_dispatch: # Manual trigger
+    - cron: '0 */6 * * *' # Every 6 hon:
+  push:
+    branches:
+      - main
+  workflow_call: # Can be called by other workflows
 
 permissions:
   contents: write
