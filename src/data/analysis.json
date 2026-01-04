@@ -1,0 +1,16 @@
+[
+    {
+        "id": "mock-id-1",
+        "title": "2025년 부동산 시장, 지금 사면 평생 후회합니다?",
+        "thumbnail": "https://img.youtube.com/vi/mock-id-1/maxresdefault.jpg",
+        "publishedAt": "2026-01-04T12:00:00Z",
+        "asset": "부동산 (아파트)",
+        "jeon_opinion": -0.8,
+        "jeon_logic": "인구 감소와 금리 인상으로 인해 부동산 시장은 10년 하락기에 접어들었습니다. 지금 사는 것은 자살 행위입니다.",
+        "oracle_signal": "BUY",
+        "oracle_logic": "역사적으로 전인구의 강한 비관론은 바닥의 신호였음. 현재 실질 수요와 공급 대책 부재로 인해 반등의 씨앗이 뿌려지고 있음.",
+        "confidence": 0.95,
+        "physiognomy_score": 92,
+        "timestamp": "08:15"
+    }
+]
