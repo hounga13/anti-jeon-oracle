@@ -83,14 +83,21 @@ def get_latest_video():
 
 def get_transcript(video_id):
     try:
-        transcript_list = YouTubeTranscriptApi.get_transcript(video_id, languages=['ko'])
+        # 한국어 자막 우선 시도
+        try:
+            transcript_list = YouTubeTranscriptApi.get_transcript(video_id, languages=['ko'])
+        except:
+            # 실패 시 자동 생성 자막이나 다른 언어 시도
+            transcript_list = YouTubeTranscriptApi.get_transcript(video_id)
+            
         return " ".join([t['text'] for t in transcript_list])
     except Exception as e:
         print(f"Transcript capture failed: {e}")
         return None
 
 def analyze_video(video_data, transcript):
-    model = genai.GenerativeModel('gemini-1.5-pro')
+    # 404 오류 방지를 위해 gemini-1.5-flash 사용 (더 빠르고 안정적)
+    model = genai.GenerativeModel('gemini-1.5-flash')
     
     # thumbnail analysis
     response = requests.get(video_data['thumbnail'])
