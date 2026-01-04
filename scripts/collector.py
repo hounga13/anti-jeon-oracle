@@ -34,6 +34,7 @@ def get_latest_video():
     return {
         "id": item['id']['videoId'],
         "title": item['snippet']['title'],
+        "description": item['snippet']['description'], # 설명 추가
         "thumbnail": item['snippet']['thumbnails']['high']['url'],
         "publishedAt": item['snippet']['publishedAt']
     }
@@ -108,11 +109,11 @@ def main():
 
     print(f"Analyzing: {video['title']}")
     transcript = get_transcript(video['id'])
-    if not transcript:
-        print("Skipping due to lack of transcript.")
-        return
-
-    analysis = analyze_video(video, transcript)
+    
+    # 자막이 없으면 영상 설명을 대신 사용
+    content_to_analyze = transcript if transcript else f"자막 없음. 영상 설명 기반 분석: {video['description']}"
+    
+    analysis = analyze_video(video, content_to_analyze)
     if analysis:
         # Merge data
         result = {
