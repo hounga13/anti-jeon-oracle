@@ -1,10 +1,3 @@
-import os
-import json
-import requests
-from datetime import datetime
-import google.generativeai as genai
-from googleapiclient.discovery import build
-import youtube_transcript_api
 import youtube_transcript_api
 from youtube_transcript_api import YouTubeTranscriptApi
 import PIL.Image
