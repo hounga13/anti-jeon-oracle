@@ -4,6 +4,7 @@ import requests
 from datetime import datetime
 import google.generativeai as genai
 from googleapiclient.discovery import build
+import youtube_transcript_api
 from youtube_transcript_api import YouTubeTranscriptApi
 from PIL import Image
 from io import BytesIO
@@ -83,12 +84,11 @@ def get_latest_video():
 
 def get_transcript(video_id):
     try:
-        # 한국어 자막 우선 시도
+        # 모듈에서 직접 호출하여 shadowing 문제 방지
         try:
-            transcript_list = YouTubeTranscriptApi.get_transcript(video_id, languages=['ko'])
+            transcript_list = youtube_transcript_api.YouTubeTranscriptApi.get_transcript(video_id, languages=['ko'])
         except:
-            # 실패 시 자동 생성 자막이나 다른 언어 시도
-            transcript_list = YouTubeTranscriptApi.get_transcript(video_id)
+            transcript_list = youtube_transcript_api.YouTubeTranscriptApi.get_transcript(video_id)
             
         return " ".join([t['text'] for t in transcript_list])
     except Exception as e:
@@ -96,8 +96,17 @@ def get_transcript(video_id):
         return None
 
 def analyze_video(video_data, transcript):
-    # 404 오류 방지를 위해 gemini-1.5-flash 사용 (더 빠르고 안정적)
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    # 가용 모델 목록 확인 (디버깅용)
+    try:
+        model = genai.GenerativeModel('gemini-1.5-flash-latest')
+    except Exception as e:
+        print(f"Model initialization failed: {e}")
+        print("Available models:")
+        for m in genai.list_models():
+            if 'generateContent' in m.supported_generation_methods:
+                print(f"- {m.name}")
+        # 예비책으로 프로 모델 시도
+        model = genai.GenerativeModel('gemini-1.5-pro-latest')
     
     # thumbnail analysis
     response = requests.get(video_data['thumbnail'])
