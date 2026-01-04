@@ -9,7 +9,7 @@ from PIL import Image
 from io import BytesIO
 
 # Configuration
-YOUTUBE_CHANNEL_ID = "UCG_M2FwYxY-D_Vq5S5UoRdw"  # @moneydo 전인구 경제연구소
+YOUTUBE_CHANNEL_ID = "UCznImSIaxZR7fdLCICLdgaQ"  # @moneydo 전인구 경제연구소 정식 ID
 YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 DATA_FILE = "src/data/analysis.json"
