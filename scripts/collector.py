@@ -1,3 +1,9 @@
+import os
+import json
+import requests
+from datetime import datetime
+import google.generativeai as genai
+from googleapiclient.discovery import build
 import youtube_transcript_api
 from youtube_transcript_api import YouTubeTranscriptApi
 import PIL.Image
@@ -77,14 +83,12 @@ def get_latest_video():
     }
 
 def get_transcript(video_id):
-    import youtube_transcript_api
     try:
-        # 가장 안전한 방식으로 호출
+        # 가장 표준적인 호출 방식 사용
         try:
-            transcript_list = youtube_transcript_api.YouTubeTranscriptApi.get_transcript(video_id, languages=['ko'])
+            transcript_list = YouTubeTranscriptApi.get_transcript(video_id, languages=['ko'])
         except Exception:
-            # 한국어 실패 시 기본 언어(보통 영어/자동생성) 시도
-            transcript_list = youtube_transcript_api.YouTubeTranscriptApi.get_transcript(video_id)
+            transcript_list = YouTubeTranscriptApi.get_transcript(video_id)
             
         return " ".join([t['text'] for t in transcript_list])
     except Exception as e:
@@ -92,18 +96,15 @@ def get_transcript(video_id):
         return None
 
 def analyze_video(video_data, transcript):
-    # 표준 모델명 사용
-    model_name = 'gemini-1.5-flash'
+    # 확인된 가용 모델: gemini-2.0-flash
+    model_name = 'gemini-2.0-flash'
+    print(f"Using model: {model_name}")
     
     try:
         model = genai.GenerativeModel(model_name)
     except Exception as e:
         print(f"Model {model_name} init failed: {e}")
-        # 가용 모델 출력 및 대체
-        print("Listing available models as requested...")
-        for m in genai.list_models():
-            print(f"- {m.name} (Supports: {m.supported_generation_methods})")
-        model = genai.GenerativeModel('gemini-pro-vision') # 최후의 수단
+        return None
     
     # thumbnail analysis
     response = requests.get(video_data['thumbnail'])
