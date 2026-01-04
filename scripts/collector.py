@@ -4,6 +4,7 @@ import requests
 from datetime import datetime
 import google.generativeai as genai
 from googleapiclient.discovery import build
+import youtube_transcript_api
 from youtube_transcript_api import YouTubeTranscriptApi
 import PIL.Image
 from io import BytesIO
@@ -60,81 +61,79 @@ def get_latest_video():
 
 def get_transcript(video_id):
     try:
-        # YouTubeTranscriptApi.get_transcript 직접 호출
-        transcript_list = YouTubeTranscriptApi.get_transcript(video_id, languages=['ko'])
+        # 모듈을 통해 직접 메서드 호출하여 속성 에러 방지
+        transcript_list = youtube_transcript_api.YouTubeTranscriptApi.get_transcript(video_id, languages=['ko'])
         return " ".join([t['text'] for t in transcript_list])
-    except Exception as e:
+    except Exception:
         try:
-            # 한국어 실패 시 자동 생성 자막 등 시도
-            transcript_list = YouTubeTranscriptApi.get_transcript(video_id)
+            # 기본 설정으로 재시도
+            transcript_list = youtube_transcript_api.YouTubeTranscriptApi.get_transcript(video_id)
             return " ".join([t['text'] for t in transcript_list])
-        except Exception as e2:
-            print(f"Transcript capture failed for {video_id}: {e2}")
+        except Exception as e:
+            print(f"Transcript capture failed for {video_id}: {e}")
             return None
 
 def analyze_video(video_data, transcript):
-    # 확인된 가용 모델: gemini-2.0-flash
-    model_name = 'gemini-2.0-flash'
-    print(f"Using model: {model_name}")
+    # 안정적인 할당량을 가진 1.5-flash 모델 사용 시도
+    # 로그에 나타난 이름 중 가장 범용적인 것을 선택
+    model_names = ['gemini-1.5-flash', 'gemini-flash-latest', 'gemini-2.0-flash']
     
-    try:
-        model = genai.GenerativeModel(model_name)
-        
-        # thumbnail analysis
-        response = requests.get(video_data['thumbnail'])
-        img = PIL.Image.open(BytesIO(response.content))
-        
-        prompt = f"""
-        당신은 유명한 경제 유튜버 '전인구'의 발언을 정반대로 해석하여 '진실의 신탁'을 내리는 AI 오라클입니다.
-        다음 영상 정보를 분석하여 결과를 JSON 형식으로 응답하세요.
-
-        영상 제목: {video_data['title']}
-        영상 자막: {transcript[:10000]} # 텍스트가 너무 길면 자름
-
-        분석 지침:
-        1. 이 영상에서 언급된 주요 자산(예: 삼성전자, 비트코인, 부동산 등)을 식별하세요.
-        2. 전인구의 의견(상승/하락)을 -1.0(강한 하락)에서 1.0(강한 상승) 사이의 점수로 환산하세요.
-        3. '확신도 스코어'를 산출하세요. ("역대급", "무조건" 등의 단어 사용 시 높임)
-        4. 전인구의 논리를 뒤집는 '오라클의 반대 논리'를 한 문장으로 작성하세요.
-        5. 전인구의 표정(이미지)을 분석하여 '관상 지수(공포/탐욕)'를 평가하세요.
-
-        출력 JSON 형식:
-        {{
-            "asset": "자산명",
-            "jeon_opinion": float,
-            "jeon_logic": "전인구의 주장 요약",
-            "oracle_signal": "BUY or SELL",
-            "oracle_logic": "오라클의 반대 논리",
-            "confidence": float,
-            "physiognomy_score": int,
-            "timestamp": "핵심 발언 시점(MM:SS)"
-        }}
-        """
-        
-        response = model.generate_content([prompt, img])
-        # JSON 추출 로직 (더 견고하게)
-        content = response.text
-        if "```json" in content:
-            json_text = content.split("```json")[1].split("```")[0].strip()
-        elif "```" in content:
-            json_text = content.split("```")[1].split("```")[0].strip()
-        else:
-            json_text = content.strip()
+    model = None
+    for name in model_names:
+        try:
+            print(f"Attempting to use model: {name}")
+            model = genai.GenerativeModel(name)
             
-        return json.loads(json_text)
-    except Exception as e:
-        print(f"Analysis or JSON parsing failed: {e}")
-        return None
+            # thumbnail analysis
+            img_response = requests.get(video_data['thumbnail'])
+            img = PIL.Image.open(BytesIO(img_response.content))
+            
+            prompt = f"""
+            당신은 유명한 경제 유튜버 '전인구'의 발언을 정반대로 해석하여 '진실의 신탁'을 내리는 AI 오라클입니다.
+            다음 영상 정보를 분석하여 결과를 JSON 형식으로 응답하세요.
+
+            영상 제목: {video_data['title']}
+            영상 자막: {transcript[:10000]} # 텍스트가 너무 길면 자름
+
+            분석 지침:
+            1. 이 영상에서 언급된 주요 자산(예: 삼성전자, 비트코인, 부동산 등)을 식별하세요.
+            2. 전인구의 의견(상승/하락)을 -1.0(강한 하락)에서 1.0(강한 상승) 사이의 점수로 환산하세요.
+            3. '확신도 스코어'를 산출하세요. ("역대급", "무조건" 등의 단어 사용 시 높임)
+            4. 전인구의 논리를 뒤집는 '오라클의 반대 논리'를 한 문장으로 작성하세요.
+            5. 전인구의 표정(이미지)을 분석하여 '관상 지수(공포/탐욕)'를 평가하세요.
+
+            출력 JSON 형식:
+            {{
+                "asset": "자산명",
+                "jeon_opinion": float,
+                "jeon_logic": "전인구의 주장 요약",
+                "oracle_signal": "BUY or SELL",
+                "oracle_logic": "오라클의 반대 논리",
+                "confidence": float,
+                "physiognomy_score": int,
+                "timestamp": "핵심 발언 시점(MM:SS)"
+            }}
+            """
+            
+            response = model.generate_content([prompt, img])
+            
+            # JSON 추출 로직
+            content = response.text
+            if "```json" in content:
+                json_text = content.split("```json")[1].split("```")[0].strip()
+            elif "```" in content:
+                json_text = content.split("```")[1].split("```")[0].strip()
+            else:
+                json_text = content.strip()
+                
+            return json.loads(json_text)
+        except Exception as e:
+            print(f"Failed with {name}: {e}")
+            continue
+            
+    return None
 
 def main():
-    print("Listing available Gemini models for debugging...")
-    try:
-        for m in genai.list_models():
-            if 'generateContent' in m.supported_generation_methods:
-                print(f"- {m.name}")
-    except Exception as e:
-        print(f"Could not list models: {e}")
-
     print("Checking for new videos...")
     video = get_latest_video()
     if not video:
@@ -181,7 +180,7 @@ def main():
             json.dump(data, f, ensure_ascii=False, indent=2)
         print("Success: Analysis saved.")
     else:
-        print("Analysis failed to generate results.")
+        print("Analysis failed to generate results after trying multiple models.")
 
 if __name__ == "__main__":
     main()
