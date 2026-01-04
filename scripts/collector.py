@@ -19,22 +19,40 @@ youtube = build("youtube", "v3", developerKey=YOUTUBE_API_KEY)
 genai.configure(api_key=GEMINI_API_KEY)
 
 def get_latest_video():
-    request = youtube.search().list(
-        part="snippet",
-        channelId=YOUTUBE_CHANNEL_ID,
-        order="date",
-        maxResults=1,
-        type="video"
+    # 1. 채널 ID로 업로드 플레이리스트 ID 가져오기 (UC -> UU)
+    uploads_playlist_id = YOUTUBE_CHANNEL_ID.replace("UC", "UU", 1)
+    
+    # 2. 플레이리스트 아이템 목록 조회 (가장 최신 1개)
+    request = youtube.playlistItems().list(
+        part="snippet,contentDetails",
+        playlistId=uploads_playlist_id,
+        maxResults=1
     )
     response = request.execute()
-    if not response['items']:
-        return None
     
-    item = response['items'][0]
+    if not response['items']:
+        # 만약 플레이리스트로 못 가져오면 검색(search)으로 재시도
+        print("PlaylistItems empty, trying search...")
+        request = youtube.search().list(
+            part="snippet",
+            channelId=YOUTUBE_CHANNEL_ID,
+            order="date",
+            maxResults=1,
+            type="video"
+        )
+        response = request.execute()
+        if not response['items']:
+            return None
+        item = response['items'][0]
+        video_id = item['id']['videoId']
+    else:
+        item = response['items'][0]
+        video_id = item['contentDetails']['videoId']
+    
     return {
-        "id": item['id']['videoId'],
+        "id": video_id,
         "title": item['snippet']['title'],
-        "description": item['snippet']['description'], # 설명 추가
+        "description": item['snippet']['description'],
         "thumbnail": item['snippet']['thumbnails']['high']['url'],
         "publishedAt": item['snippet']['publishedAt']
     }
