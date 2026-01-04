@@ -74,9 +74,17 @@ def get_transcript(video_id):
             return None
 
 def analyze_video(video_data, transcript):
-    # 안정적인 할당량을 가진 1.5-flash 모델 사용 시도
-    # 로그에 나타난 이름 중 가장 범용적인 것을 선택
-    model_names = ['gemini-1.5-flash', 'gemini-flash-latest', 'gemini-2.0-flash']
+    # 로그에서 확인된 '사용 가능한 모델' 우선순위로 변경
+    # 1순위: 가장 성능이 좋은 gemini-2.0-flash
+    # 2순위: 그 다음으로 안정적인 gemini-2.0-flash-lite (할당량 문제 시 대체)
+    # 3순위: 최신 실험 버전
+    model_names = [
+        'gemini-2.0-flash', 
+        'gemini-2.0-flash-lite-preview-02-05',
+        'gemini-2.0-flash-exp'
+    ]
+    
+    import time
     
     model = None
     for name in model_names:
@@ -129,6 +137,9 @@ def analyze_video(video_data, transcript):
             return json.loads(json_text)
         except Exception as e:
             print(f"Failed with {name}: {e}")
+            if "429" in str(e): # Quota exceeded
+                print("Quota limit hit, waiting 5 seconds before trying next model...")
+                time.sleep(5)
             continue
             
     return None
