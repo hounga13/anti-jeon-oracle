@@ -83,30 +83,33 @@ def get_latest_video():
     }
 
 def get_transcript(video_id):
+    import youtube_transcript_api
     try:
-        # 모듈에서 직접 호출하여 shadowing 문제 방지
+        # 가장 안전한 방식으로 호출
         try:
             transcript_list = youtube_transcript_api.YouTubeTranscriptApi.get_transcript(video_id, languages=['ko'])
-        except:
+        except Exception:
+            # 한국어 실패 시 기본 언어(보통 영어/자동생성) 시도
             transcript_list = youtube_transcript_api.YouTubeTranscriptApi.get_transcript(video_id)
             
         return " ".join([t['text'] for t in transcript_list])
     except Exception as e:
-        print(f"Transcript capture failed: {e}")
+        print(f"Transcript capture failed for {video_id}: {e}")
         return None
 
 def analyze_video(video_data, transcript):
-    # 가용 모델 목록 확인 (디버깅용)
+    # 표준 모델명 사용
+    model_name = 'gemini-1.5-flash'
+    
     try:
-        model = genai.GenerativeModel('gemini-1.5-flash-latest')
+        model = genai.GenerativeModel(model_name)
     except Exception as e:
-        print(f"Model initialization failed: {e}")
-        print("Available models:")
+        print(f"Model {model_name} init failed: {e}")
+        # 가용 모델 출력 및 대체
+        print("Listing available models as requested...")
         for m in genai.list_models():
-            if 'generateContent' in m.supported_generation_methods:
-                print(f"- {m.name}")
-        # 예비책으로 프로 모델 시도
-        model = genai.GenerativeModel('gemini-1.5-pro-latest')
+            print(f"- {m.name} (Supports: {m.supported_generation_methods})")
+        model = genai.GenerativeModel('gemini-pro-vision') # 최후의 수단
     
     # thumbnail analysis
     response = requests.get(video_data['thumbnail'])
