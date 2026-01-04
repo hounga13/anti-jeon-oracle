@@ -5,8 +5,9 @@ from datetime import datetime
 import google.generativeai as genai
 from googleapiclient.discovery import build
 import youtube_transcript_api
+import youtube_transcript_api
 from youtube_transcript_api import YouTubeTranscriptApi
-from PIL import Image
+import PIL.Image
 from io import BytesIO
 
 # Configuration
@@ -152,6 +153,14 @@ def analyze_video(video_data, transcript):
         return None
 
 def main():
+    print("Listing available Gemini models for debugging...")
+    try:
+        for m in genai.list_models():
+            if 'generateContent' in m.supported_generation_methods:
+                print(f"- {m.name}")
+    except Exception as e:
+        print(f"Could not list models: {e}")
+
     print("Checking for new videos...")
     video = get_latest_video()
     if not video:
