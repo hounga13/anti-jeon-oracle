@@ -6,6 +6,11 @@ on:
       - main
   workflow_call: # Can be called by other workflows
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build_site:
     runs-on: ubuntu-latest
