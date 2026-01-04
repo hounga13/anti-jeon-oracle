@@ -19,20 +19,34 @@ youtube = build("youtube", "v3", developerKey=YOUTUBE_API_KEY)
 genai.configure(api_key=GEMINI_API_KEY)
 
 def get_latest_video():
-    # 1. 채널 ID로 업로드 플레이리스트 ID 가져오기 (UC -> UU)
-    uploads_playlist_id = YOUTUBE_CHANNEL_ID.replace("UC", "UU", 1)
+    # 1. 채널의 contentDetails에서 'uploads' 플레이리스트 ID를 정확히 가져오기
+    try:
+        channel_response = youtube.channels().list(
+            part="contentDetails",
+            id=YOUTUBE_CHANNEL_ID
+        ).execute()
+        
+        if not channel_response['items']:
+            print(f"Error: Channel {YOUTUBE_CHANNEL_ID} not found.")
+            return None
+            
+        uploads_playlist_id = channel_response['items'][0]['contentDetails']['relatedPlaylists']['uploads']
+    except Exception as e:
+        print(f"Error fetching channel details: {e}")
+        # 예비책: UC -> UU 치환 (안 될 수도 있지만 시도)
+        uploads_playlist_id = YOUTUBE_CHANNEL_ID.replace("UC", "UU", 1)
     
     # 2. 플레이리스트 아이템 목록 조회 (가장 최신 1개)
-    request = youtube.playlistItems().list(
-        part="snippet,contentDetails",
-        playlistId=uploads_playlist_id,
-        maxResults=1
-    )
-    response = request.execute()
-    
-    if not response['items']:
-        # 만약 플레이리스트로 못 가져오면 검색(search)으로 재시도
-        print("PlaylistItems empty, trying search...")
+    try:
+        request = youtube.playlistItems().list(
+            part="snippet,contentDetails",
+            playlistId=uploads_playlist_id,
+            maxResults=1
+        )
+        response = request.execute()
+    except Exception as e:
+        print(f"PlaylistItems API failed: {e}. Trying search API as fallback...")
+        # 플레이리스트를 못 가져오면 검색(search)으로 재시도
         request = youtube.search().list(
             part="snippet",
             channelId=YOUTUBE_CHANNEL_ID,
@@ -45,9 +59,19 @@ def get_latest_video():
             return None
         item = response['items'][0]
         video_id = item['id']['videoId']
-    else:
-        item = response['items'][0]
-        video_id = item['contentDetails']['videoId']
+        return {
+            "id": video_id,
+            "title": item['snippet']['title'],
+            "description": item['snippet']['description'],
+            "thumbnail": item['snippet']['thumbnails']['high']['url'],
+            "publishedAt": item['snippet']['publishedAt']
+        }
+    
+    if not response['items']:
+        return None
+        
+    item = response['items'][0]
+    video_id = item['contentDetails']['videoId']
     
     return {
         "id": video_id,
