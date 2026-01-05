@@ -4,6 +4,7 @@ import requests
 from datetime import datetime
 import google.generativeai as genai
 from googleapiclient.discovery import build
+import youtube_transcript_api
 from youtube_transcript_api import YouTubeTranscriptApi
 import PIL.Image
 from io import BytesIO
@@ -87,9 +88,28 @@ def get_latest_video():
 
 def get_transcript(video_id):
     try:
-        # 한국어 우선, 영어/자동생성 자막 시도
+        # Debugging: Check availability
+        try:
+             if hasattr(YouTubeTranscriptApi, 'get_transcript'):
+                 pass
+             else:
+                 print(f"DEBUG: YouTubeTranscriptApi {type(YouTubeTranscriptApi)} missing get_transcript")
+        except:
+             pass
+
+        # Attempt 1: Standard class method
         transcript_list = YouTubeTranscriptApi.get_transcript(video_id, languages=['ko', 'en'])
         return " ".join([t['text'] for t in transcript_list])
+    except AttributeError:
+        # Attempt 2: Explicit module usage (Fallback)
+        print("AttributeError encountered for get_transcript. Retrying with module...")
+        try:
+            import youtube_transcript_api as yta
+            transcript_list = yta.YouTubeTranscriptApi.get_transcript(video_id, languages=['ko', 'en'])
+            return " ".join([t['text'] for t in transcript_list])
+        except Exception as e:
+            print(f"Fallback transcript failed: {e}")
+            return None
     except Exception as e:
         print(f"Transcript capture failed for {video_id}: {e}")
         return None
