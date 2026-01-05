@@ -4,7 +4,6 @@ import requests
 from datetime import datetime
 import google.generativeai as genai
 from googleapiclient.discovery import build
-import youtube_transcript_api
 from youtube_transcript_api import YouTubeTranscriptApi
 import PIL.Image
 from io import BytesIO
@@ -15,62 +14,85 @@ YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 DATA_FILE = "src/data/analysis.json"
 
-# Initialize APIs
-youtube = build("youtube", "v3", developerKey=YOUTUBE_API_KEY)
+# Setup
+if not GEMINI_API_KEY:
+    print("Error: GEMINI_API_KEY is not set.")
+    exit(1)
+
 genai.configure(api_key=GEMINI_API_KEY)
+youtube = build('youtube', 'v3', developerKey=YOUTUBE_API_KEY)
 
 def get_latest_video():
+    # 1. 채널의 contentDetails에서 'uploads' 플레이리스트 ID를 정확히 가져오기
     try:
-        # 1. 채널의 contentDetails에서 'uploads' 플레이리스트 ID 가져오기
         channel_response = youtube.channels().list(
-            part="contentDetails",
-            id=YOUTUBE_CHANNEL_ID
+            id=YOUTUBE_CHANNEL_ID,
+            part='contentDetails'
         ).execute()
-        
-        if not channel_response.get('items'):
-            print(f"Error: Channel {YOUTUBE_CHANNEL_ID} not found.")
+
+        if not channel_response['items']:
+            print("Error: Channel not found.")
             return None
-            
+
         uploads_playlist_id = channel_response['items'][0]['contentDetails']['relatedPlaylists']['uploads']
         
-        # 2. 플레이리스트 아이템 목록 조회 (가장 최신 1개)
-        request = youtube.playlistItems().list(
-            part="snippet,contentDetails",
+        # 2. 업로드 플레이리스트에서 최신 영상 가져오기
+        playlist_response = youtube.playlistItems().list(
             playlistId=uploads_playlist_id,
+            part='snippet,contentDetails',
             maxResults=1
-        )
-        response = request.execute()
-        
-        if not response.get('items'):
-            print("No videos found in uploads playlist.")
-            return None
+        ).execute()
+
+        if playlist_response['items']:
+            item = playlist_response['items'][0]
+            video_id = item['contentDetails']['videoId']
+            title = item['snippet']['title']
+            description = item['snippet']['description']
+            thumbnail = item['snippet']['thumbnails']['high']['url']
+            publishedAt = item['snippet']['publishedAt'] # Keep publishedAt
             
-        item = response['items'][0]
-        video_id = item['contentDetails']['videoId']
+            return {
+                'id': video_id,
+                'title': title,
+                'description': description,
+                'thumbnail': thumbnail,
+                'publishedAt': publishedAt # Include publishedAt
+            }
         
-        return {
-            "id": video_id,
-            "title": item['snippet']['title'],
-            "description": item['snippet']['description'],
-            "thumbnail": item['snippet']['thumbnails']['high']['url'],
-            "publishedAt": item['snippet']['publishedAt']
-        }
+        # 3. Fallback: 검색 API 사용 (플레이리스트가 비어있는 경우 등)
+        print("Playlist lookup failed or empty. Trying search API fallback...")
+        search_response = youtube.search().list(
+            channelId=YOUTUBE_CHANNEL_ID,
+            part='id,snippet',
+            order='date',
+            maxResults=1,
+            type='video'
+        ).execute()
+
+        if search_response['items']:
+            item = search_response['items'][0]
+            return {
+                'id': item['id']['videoId'],
+                'title': item['snippet']['title'],
+                'description': item['snippet']['description'],
+                'thumbnail': item['snippet']['thumbnails']['high']['url'],
+                'publishedAt': item['snippet']['publishedAt'] # Include publishedAt
+            }
+            
     except Exception as e:
-        print(f"Error in get_latest_video: {e}")
+        print(f"Error getting latest video: {e}")
         return None
+    
+    return None
 
 def get_transcript(video_id):
     try:
-        # 가장 표준적인 방식으로 호출 (임포트 구문 정리 필요 없음)
-        transcript_list = YouTubeTranscriptApi.get_transcript(video_id, languages=['ko'])
+        # 한국어 우선, 영어/자동생성 자막 시도
+        transcript_list = YouTubeTranscriptApi.get_transcript(video_id, languages=['ko', 'en'])
         return " ".join([t['text'] for t in transcript_list])
-    except Exception:
-        try:
-            transcript_list = YouTubeTranscriptApi.get_transcript(video_id)
-            return " ".join([t['text'] for t in transcript_list])
-        except Exception as e:
-            print(f"Transcript capture failed for {video_id}: {e}")
-            return None
+    except Exception as e:
+        print(f"Transcript capture failed for {video_id}: {e}")
+        return None
 
 def analyze_video(video_data, transcript):
     # 로그에서 확인된 '사용 가능한 모델' 우선순위로 변경
