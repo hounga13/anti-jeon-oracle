@@ -24,9 +24,7 @@ function App() {
   const latestData = analysisData.length > 0 ? (analysisData[0] as unknown as VideoData) : null;
   const analysis = latestData?.analysis;
 
-  // Calculate dynamic stats (mock logic for now, or based on history)
-  const winRate = "+18.5%";
-  const trustScore = 95.2;
+
 
   // Determine Fear/Greed based on Oracle's latest signal
   const marketMood = analysis?.oracle_signal === "SELL" ? "매우 공포 (Deep Fear)" : "매우 탐욕 (Extreme Greed)";
