@@ -25,8 +25,7 @@ function App() {
   const analysis = latestData?.analysis;
 
 
-  // Determine Fear/Greed based on Oracle's latest signal
-  const marketMoodColor = analysis?.oracle_signal === "SELL" ? "text-blue-600" : "text-red-500";
+
 
   return (
     <div className="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col antialiased w-full selection:bg-indigo-500 selection:text-white">
