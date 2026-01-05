@@ -92,23 +92,26 @@ def analyze_video(video_data, transcript):
             print(f"Attempting to use model: {name}")
             model = genai.GenerativeModel(name)
             
-            # thumbnail analysis
-            img_response = requests.get(video_data['thumbnail'])
-            img = PIL.Image.open(BytesIO(img_response.content))
+            # [Token Optimization] 이미지 분석 비활성화 (할당량 절약)
+            # img_response = requests.get(video_data['thumbnail'])
+            # img = PIL.Image.open(BytesIO(img_response.content))
+            
+            # [Token Optimization] 자막 길이 3000자로 제한
+            short_transcript = transcript[:3000]
             
             prompt = f"""
             당신은 유명한 경제 유튜버 '전인구'의 발언을 정반대로 해석하여 '진실의 신탁'을 내리는 AI 오라클입니다.
             다음 영상 정보를 분석하여 결과를 JSON 형식으로 응답하세요.
 
             영상 제목: {video_data['title']}
-            영상 자막: {transcript[:10000]} # 텍스트가 너무 길면 자름
+            영상 자막: {short_transcript} ... (이하 생략)
 
             분석 지침:
             1. 이 영상에서 언급된 주요 자산(예: 삼성전자, 비트코인, 부동산 등)을 식별하세요.
             2. 전인구의 의견(상승/하락)을 -1.0(강한 하락)에서 1.0(강한 상승) 사이의 점수로 환산하세요.
             3. '확신도 스코어'를 산출하세요. ("역대급", "무조건" 등의 단어 사용 시 높임)
             4. 전인구의 논리를 뒤집는 '오라클의 반대 논리'를 한 문장으로 작성하세요.
-            5. 전인구의 표정(이미지)을 분석하여 '관상 지수(공포/탐욕)'를 평가하세요.
+            5. 관상 분석은 생략합니다. '관상 지수'는 50(중립)으로 고정하세요.
 
             출력 JSON 형식:
             {{
@@ -118,12 +121,13 @@ def analyze_video(video_data, transcript):
                 "oracle_signal": "BUY or SELL",
                 "oracle_logic": "오라클의 반대 논리",
                 "confidence": float,
-                "physiognomy_score": int,
+                "physiognomy_score": 50,
                 "timestamp": "핵심 발언 시점(MM:SS)"
             }}
             """
             
-            response = model.generate_content([prompt, img])
+            # 텍스트만 전송
+            response = model.generate_content(prompt)
             
             # JSON 추출 로직
             content = response.text
