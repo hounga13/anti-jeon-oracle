@@ -37,53 +37,79 @@ def get_latest_video():
 
         uploads_playlist_id = channel_response['items'][0]['contentDetails']['relatedPlaylists']['uploads']
         
-        # 2. 업로드 플레이리스트에서 최신 영상 가져오기
+        # 2. 업로드 플레이리스트에서 최신 영상 5개 가져와서 검증
+        # (최신 영상이 라이브일 수 있으므로 몇 개 더 확인)
         playlist_response = youtube.playlistItems().list(
             playlistId=uploads_playlist_id,
             part='snippet,contentDetails',
-            maxResults=1
+            maxResults=5
         ).execute()
 
-        if playlist_response['items']:
-            item = playlist_response['items'][0]
-            video_id = item['contentDetails']['videoId']
-            title = item['snippet']['title']
-            description = item['snippet']['description']
-            thumbnail = item['snippet']['thumbnails']['high']['url']
-            publishedAt = item['snippet']['publishedAt'] # Keep publishedAt
-            
-            return {
-                'id': video_id,
-                'title': title,
-                'description': description,
-                'thumbnail': thumbnail,
-                'publishedAt': publishedAt # Include publishedAt
-            }
+        candidates = playlist_response.get('items', [])
         
-        # 3. Fallback: 검색 API 사용 (플레이리스트가 비어있는 경우 등)
-        print("Playlist lookup failed or empty. Trying search API fallback...")
-        search_response = youtube.search().list(
-            channelId=YOUTUBE_CHANNEL_ID,
-            part='id,snippet',
-            order='date',
-            maxResults=1,
-            type='video'
-        ).execute()
+        # 3. Fallback: 검색 API 사용
+        if not candidates:
+            print("Playlist empty. Trying search API fallback...")
+            search_response = youtube.search().list(
+                channelId=YOUTUBE_CHANNEL_ID,
+                part='id,snippet',
+                order='date',
+                maxResults=5,
+                type='video'
+            ).execute()
+            candidates = search_response.get('items', [])
 
-        if search_response['items']:
-            item = search_response['items'][0]
-            return {
-                'id': item['id']['videoId'],
-                'title': item['snippet']['title'],
-                'description': item['snippet']['description'],
-                'thumbnail': item['snippet']['thumbnails']['high']['url'],
-                'publishedAt': item['snippet']['publishedAt'] # Include publishedAt
-            }
+        for item in candidates:
+            # ID 추출 (PlaylistItems와 Search 결과 구조 차이 처리)
+            if 'contentDetails' in item:
+                video_id = item['contentDetails']['videoId']
+            else:
+                video_id = item['id']['videoId']
+                
+            title = item['snippet']['title']
+            
+            # [Filter] 멤버십/라이브 키워드 1차 필터링
+            forbidden_keywords = ['멤버십', '회원전용', '[라이브]', '(라이브)', '실시간 스트리밍']
+            if any(k in title for k in forbidden_keywords):
+                print(f"Skipping video '{title}' (Keyword blocked)")
+                continue
+
+            # [Filter] Video Details API로 라이브 상태 정밀 확인
+            try:
+                video_details = youtube.videos().list(
+                    id=video_id,
+                    part='snippet,contentDetails'
+                ).execute()
+                
+                if not video_details['items']:
+                    continue
+                    
+                details = video_details['items'][0]
+                live_status = details['snippet'].get('liveBroadcastContent', 'none')
+                
+                # 'upcoming'(예정), 'live'(생방송 중) 제외. 'none'만 허용.
+                if live_status != 'none':
+                    print(f"Skipping video '{title}' (Live status: {live_status})")
+                    continue
+                    
+                # 통과된 영상 정보 반환
+                return {
+                    'id': video_id,
+                    'title': title,
+                    'description': details['snippet']['description'],
+                    'thumbnail': details['snippet']['thumbnails']['high']['url'],
+                    'publishedAt': details['snippet']['publishedAt']
+                }
+                
+            except Exception as e:
+                print(f"Error checking video details for {video_id}: {e}")
+                continue
             
     except Exception as e:
         print(f"Error getting latest video: {e}")
         return None
     
+    print("No suitable videos found.")
     return None
 
 def get_transcript(video_id):
@@ -111,6 +137,7 @@ def get_transcript(video_id):
             print(f"Fallback transcript failed: {e}")
             return None
     except Exception as e:
+        # TranscriptDisabled, VideoUnavailable 등의 구체적인 에러는 여기서 잡힘
         print(f"Transcript capture failed for {video_id}: {e}")
         return None
 
