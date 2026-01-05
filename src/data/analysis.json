@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "id": "S3LtB_jwDV4",
+    "title": "오늘 주식 뭐사지? 뉴욕상단 시작",
+    "thumbnail": "https://i.ytimg.com/vi/S3LtB_jwDV4/hqdefault.jpg",
+    "publishedAt": "2026-01-05T11:00:44Z",
+    "asset": "삼성전자",
+    "jeon_opinion": -0.3,
+    "jeon_logic": "본 영상은 특정 주식에 대한 직접적인 매수/매도 의견을 제시하지 않으나, 뉴욕상단 시작이라는 제목과 경제 상황에 대한 언급은 삼성전자를 포함한 국내 주식 시장 전반에 대한 신중한 접근을 암시합니다.",
+    "oracle_signal": "BUY",
+    "oracle_logic": "지금은 신중한 투자가 필요하지만, 결국에는 삼성전자의 가치가 상승할 것이므로 매수 기회로 삼아야 한다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  }
+]
