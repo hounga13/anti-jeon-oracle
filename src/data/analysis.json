@@ -1,5 +1,19 @@
 [
   {
+    "id": "S3LtB_jwDV4",
+    "title": "오늘 주식 뭐사지? 뉴욕상단 시작",
+    "thumbnail": "https://i.ytimg.com/vi/S3LtB_jwDV4/hqdefault.jpg",
+    "publishedAt": "2026-01-05T11:00:44Z",
+    "asset": "추천 도서 (뉴욕상단, 2026 환율전쟁)",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "본인의 저서를 적극적으로 홍보하고 판매를 유도하므로 독자들에게 경제적 부담을 줄 수 있다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "책 판매 유도는 독자에게 도움이 되는 정보 제공보다는 개인적인 이익 추구에 집중된 행위일 수 있으며, 정보의 객관성을 의심해봐야 한다.",
+    "confidence": 0.8,
+    "physiognomy_score": 50,
+    "timestamp": "00:05"
+  },
+  {
     "id": "sample_video_id",
     "title": "삼성전자, 지금 안 사면 평생 후회합니다! 역대급 기회!",
     "description": "전인구의 강력 추천 종목! 삼성전자의 미래를 분석합니다.",
