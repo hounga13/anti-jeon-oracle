@@ -61,13 +61,12 @@ def get_latest_video():
 
 def get_transcript(video_id):
     try:
-        # 모듈을 통해 직접 메서드 호출하여 속성 에러 방지
-        transcript_list = youtube_transcript_api.YouTubeTranscriptApi.get_transcript(video_id, languages=['ko'])
+        # 가장 표준적인 방식으로 호출 (임포트 구문 정리 필요 없음)
+        transcript_list = YouTubeTranscriptApi.get_transcript(video_id, languages=['ko'])
         return " ".join([t['text'] for t in transcript_list])
     except Exception:
         try:
-            # 기본 설정으로 재시도
-            transcript_list = youtube_transcript_api.YouTubeTranscriptApi.get_transcript(video_id)
+            transcript_list = YouTubeTranscriptApi.get_transcript(video_id)
             return " ".join([t['text'] for t in transcript_list])
         except Exception as e:
             print(f"Transcript capture failed for {video_id}: {e}")
@@ -178,6 +177,13 @@ def main():
     
     analysis = analyze_video(video, content_to_analyze)
     if analysis:
+        # [Fix] 모델이 JSON을 리스트로 반환하는 경우에 대한 예외 처리
+        if isinstance(analysis, list):
+            if not analysis: # 빈 리스트인 경우
+                print("Analysis result is empty list.")
+                return
+            analysis = analysis[0] # 첫 번째 요소 사용
+
         # Merge data
         result = {
             "id": video['id'],
