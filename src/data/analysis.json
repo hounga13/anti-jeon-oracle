@@ -1,5 +1,19 @@
 [
   {
+    "id": "tiFdpPoHTVE",
+    "title": "(뉴욕상단) 현대차 급등 이유 / 흑백요리사 관련 / 미국 고용지표 발표 / 하락하는 나스닥",
+    "thumbnail": "https://i.ytimg.com/vi/tiFdpPoHTVE/hqdefault.jpg",
+    "publishedAt": "2026-01-07T10:58:32Z",
+    "asset": "현대차",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "현대차 급등 이유에 대한 분석이 영상 제목에 언급되었지만, 실제 영상 내용이 없거나 하락 가능성을 암시하는 제목이므로 하락에 무게를 둔다.",
+    "oracle_signal": "BUY",
+    "oracle_logic": "급등 이유를 숨기거나 하락을 암시하는 정보는 시장의 과도한 경계를 유발하고, 이는 오히려 매수 기회가 될 수 있다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00 (영상에 구체적인 언급이 없어 시작 시점으로 지정)"
+  },
+  {
     "id": "W4_MCLT3aRo",
     "title": "코스피만 오르는 이유 / 엔비디아 자율차 / 미국증시는 왜 안 오르는가?",
     "thumbnail": "https://i.ytimg.com/vi/W4_MCLT3aRo/hqdefault.jpg",
