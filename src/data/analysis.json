@@ -1,5 +1,19 @@
 [
   {
+    "id": "lVG2hRYbRZ4",
+    "title": "삼성전자 잠정실적 대박을 예상하는 이유(ft.더 중요한 것)",
+    "thumbnail": "https://i.ytimg.com/vi/lVG2hRYbRZ4/hqdefault.jpg",
+    "publishedAt": "2026-01-07T21:45:03Z",
+    "asset": "삼성전자",
+    "jeon_opinion": -0.8,
+    "jeon_logic": "영상 제목에서 '대박을 예상'한다고 하지만, 실제로는 불확실한 경제 상황과 경쟁 심화 등으로 인해 삼성전자의 실적은 예상보다 저조할 가능성이 높다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "반도체 시장의 침체와 수요 감소로 인해 삼성전자의 실적은 악화될 것이며, 지금은 투자할 시기가 아니다.",
+    "confidence": 0.7,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "tiFdpPoHTVE",
     "title": "(뉴욕상단) 현대차 급등 이유 / 흑백요리사 관련 / 미국 고용지표 발표 / 하락하는 나스닥",
     "thumbnail": "https://i.ytimg.com/vi/tiFdpPoHTVE/hqdefault.jpg",
