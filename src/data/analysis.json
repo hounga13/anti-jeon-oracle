@@ -1,5 +1,19 @@
 [
   {
+    "id": "6_zfiAHDF1w",
+    "title": "오르다만 코스피 / 불안한 나스닥 / 트럼프가 이상하다",
+    "thumbnail": "https://i.ytimg.com/vi/6_zfiAHDF1w/hqdefault.jpg",
+    "publishedAt": "2026-01-08T11:06:55Z",
+    "asset": "코스피",
+    "jeon_opinion": -0.3,
+    "jeon_logic": "오르기만 하는 코스피는 곧 하락할 가능성이 높다는 주장",
+    "oracle_signal": "BUY",
+    "oracle_logic": "과매수 심리가 해소될 때까지 코스피는 상승 모멘텀을 유지할 것이다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00 (추정 - 영상 내용 기반)"
+  },
+  {
     "id": "mCKbg-iZwx0",
     "title": "바이오주 올해 크게 오를 겁니다. 이 주식은 놓치지 마세요(ft.강하나 대표 1부)",
     "thumbnail": "https://i.ytimg.com/vi/mCKbg-iZwx0/hqdefault.jpg",
