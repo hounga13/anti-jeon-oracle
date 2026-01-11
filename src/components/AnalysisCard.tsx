@@ -53,29 +53,34 @@ export function AnalysisCard({ data, className }: AnalysisCardProps) {
             {/* Grid Layout for Logic */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Jeon's Logic */}
+                {/* Jeon's Logic */}
                 <div className="bg-slate-50 rounded-2xl p-5">
-                    <div className="flex items-center gap-2 mb-3">
-                        <span className="w-5 h-5 rounded-full bg-slate-200 flex items-center justify-center text-[10px]">🗣️</span>
-                        <h4 className="text-xs font-bold text-slate-500 uppercase">인구신의 발언 요약</h4>
-                    </div>
-                    <p className="text-slate-800 font-medium leading-relaxed text-sm">
-                        "{analysis.jeon_logic}"
-                    </p>
-                    <div className="mt-4 flex items-center gap-2 text-xs font-semibold">
-                        <span className="text-slate-400">인구신의 말씀:</span>
-                        <span className={analysis.jeon_opinion > 0 ? "text-red-500" : "text-blue-500"}>
+                    <div className="flex flex-col items-center justify-center gap-2 mb-4 border-b border-slate-200 pb-3">
+                        <div className="flex items-center gap-2">
+                            <span className="w-5 h-5 rounded-full bg-slate-200 flex items-center justify-center text-[10px]">🗣️</span>
+                            <h4 className="text-xs font-bold text-slate-500 uppercase">인구신의 말씀</h4>
+                        </div>
+                        <span className={cn(
+                            "text-sm font-bold px-3 py-1 rounded-full",
+                            analysis.jeon_opinion > 0 ? "bg-red-100 text-red-600" : "bg-blue-100 text-blue-600"
+                        )}>
                             {analysis.jeon_opinion > 0 ? "상승 전망 📈" : "하락 전망 📉"}
                         </span>
                     </div>
+                    <p className="text-slate-800 font-medium leading-relaxed text-sm text-center">
+                        "{analysis.jeon_logic}"
+                    </p>
                 </div>
 
                 {/* Oracle's Logic */}
                 <div className={cn("rounded-2xl p-5 relative overflow-hidden", isBuy ? "bg-red-50/50" : isSell ? "bg-blue-50/50" : "bg-slate-50")}>
-                    <div className="flex items-center gap-2 mb-3 relative z-10">
-                        <div className={cn("w-5 h-5 rounded-full flex items-center justify-center text-white text-[10px]", isBuy ? "bg-red-500" : "bg-blue-500")}>🐸</div>
-                        <h4 className={cn("text-xs font-bold uppercase", isBuy ? "text-red-600" : "text-blue-600")}>청개구리 AI</h4>
+                    <div className="flex flex-col items-center justify-center gap-2 mb-4 border-b border-black/5 pb-3 relative z-10">
+                        <div className="flex items-center gap-2">
+                            <div className={cn("w-5 h-5 rounded-full flex items-center justify-center text-white text-[10px]", isBuy ? "bg-red-500" : "bg-blue-500")}>🐸</div>
+                            <h4 className={cn("text-xs font-bold uppercase", isBuy ? "text-red-600" : "text-blue-600")}>청개구리 AI</h4>
+                        </div>
                     </div>
-                    <p className="text-slate-900 font-medium leading-relaxed text-sm relative z-10">
+                    <p className="text-slate-900 font-medium leading-relaxed text-sm relative z-10 text-center">
                         "{analysis.oracle_logic}"
                     </p>
                     <p className="mt-2 text-[10px] text-slate-400 font-medium opacity-80 relative z-10">
