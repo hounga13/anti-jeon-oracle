@@ -82,20 +82,20 @@ export function AnalysisCard({ data, className }: AnalysisCardProps) {
             </div>
 
             {/* Engagement & Source Actions */}
-            <div className="mt-6 pt-4 border-t border-slate-100 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-400 gap-4">
-                <div className="flex items-center gap-3">
-                    <div className="flex items-center gap-1 overflow-hidden">
+            <div className="mt-6 pt-4 border-t border-slate-100 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-400 gap-4 w-full">
+                <div className="flex items-center gap-3 w-full sm:w-auto min-w-0 justify-center sm:justify-start">
+                    <div className="flex items-center gap-1 overflow-hidden min-w-0">
                         <span className="flex-shrink-0">출처:</span>
                         <a
                             href={`https://www.youtube.com/watch?v=${data.id}`}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="truncate hover:text-indigo-600 hover:underline transition-colors"
+                            className="truncate hover:text-indigo-600 hover:underline transition-colors block"
                         >
                             {data.title}
                         </a>
                     </div>
-                    <span className="flex-shrink-0 ml-2 hidden sm:inline">{data.date}</span>
+                    <span className="flex-shrink-0 ml-2 whitespace-nowrap hidden sm:inline">{data.date}</span>
                 </div>
             </div>
         </div>
