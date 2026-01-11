@@ -1,0 +1,69 @@
+import { AnalysisCard } from './AnalysisCard';
+import { cn } from '../lib/utils';
+import { motion } from 'framer-motion';
+
+// Re-using the interfaces for now, realistically should be imported
+interface Analysis {
+    asset: string;
+    jeon_opinion: number;
+    jeon_logic: string;
+    oracle_signal: "BUY" | "SELL" | "HOLD";
+    oracle_logic: string;
+    confidence: number;
+    physiognomy_score: number;
+    timestamp: string;
+}
+
+interface VideoData {
+    id: string;
+    title: string;
+    description: string;
+    analysis: Analysis;
+    date: string;
+}
+
+interface BentoGridProps {
+    items: VideoData[];
+    className?: string;
+}
+
+export function BentoGrid({ items, className }: BentoGridProps) {
+    if (!items || items.length === 0) {
+        return (
+            <div className="w-full h-64 flex flex-col items-center justify-center bg-white rounded-3xl border border-slate-100 shadow-sm text-center p-8">
+                <div className="text-4xl mb-4">🔮</div>
+                <h3 className="text-lg font-bold text-slate-900">Waiting for New Analysis</h3>
+                <p className="text-slate-500 text-sm mt-2">Checking for new videos from Jeon...</p>
+            </div>
+        );
+    }
+
+    // Determine the highlight item (first one)
+    const [highlight] = items;
+
+    return (
+        <div className={cn("w-full max-w-7xl mx-auto px-6 py-12", className)}>
+            <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+            >
+                <div className="mb-10">
+                    <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight">Latest Insights</h2>
+                    <p className="text-lg text-slate-500 font-medium">Real-time analysis of the Oracle.</p>
+                </div>
+
+                <div className="grid grid-cols-1 gap-8">
+                    {/* Highlighted Main Card */}
+                    <AnalysisCard data={highlight} className="w-full shadow-lg hover:shadow-xl ring-1 ring-black/5" />
+
+                    {/* Future: Secondary Grid for older items could go here */}
+                    {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {rest.map(item => <AnalysisCard key={item.id} data={item} />)} 
+            </div> */}
+                </div>
+            </motion.div>
+        </div>
+    );
+}
