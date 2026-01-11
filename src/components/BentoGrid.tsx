@@ -42,7 +42,7 @@ export function BentoGrid({ items, className }: BentoGridProps) {
     const [highlight] = items;
 
     return (
-        <div className={cn("w-full max-w-7xl mx-auto px-6 py-12", className)}>
+        <div id="analysis-section" className={cn("w-full max-w-7xl mx-auto px-6 py-12", className)}>
             <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -51,7 +51,6 @@ export function BentoGrid({ items, className }: BentoGridProps) {
             >
                 <div className="mb-10">
                     <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight">실시간 인간지표 포착</h2>
-                    <p className="text-lg text-slate-500 font-medium">데이터가 알려주는 반대매매 타이밍</p>
                 </div>
 
                 <div className="grid grid-cols-1 gap-8">

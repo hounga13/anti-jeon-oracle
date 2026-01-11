@@ -34,11 +34,13 @@ export function Hero() {
                     transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
                     className="mt-10 flex gap-4 justify-center"
                 >
-                    <button className="px-8 py-3 rounded-full bg-blue-600 text-white font-medium text-sm md:text-base hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/30">
+                    <button
+                        onClick={() => {
+                            document.getElementById('analysis-section')?.scrollIntoView({ behavior: 'smooth' });
+                        }}
+                        className="px-8 py-3 rounded-full bg-blue-600 text-white font-medium text-sm md:text-base hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/30"
+                    >
                         포착된 종목 보기
-                    </button>
-                    <button className="px-8 py-3 rounded-full bg-white text-blue-600 font-medium text-sm md:text-base hover:bg-slate-50 transition-colors border border-slate-200">
-                        더 알아보기
                     </button>
                 </motion.div>
             </div>
