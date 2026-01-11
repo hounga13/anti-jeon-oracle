@@ -15,9 +15,9 @@ interface Analysis {
 interface VideoData {
     id: string;
     title: string;
-    description: string;
+    description?: string;
     analysis: Analysis;
-    date: string;
+    date?: string;
 }
 
 interface AnalysisCardProps {
@@ -35,11 +35,11 @@ export function AnalysisCard({ data, className }: AnalysisCardProps) {
             {/* Header Info */}
             <div className="flex justify-between items-start mb-6">
                 <div>
-                    <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Asset</span>
+                    <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">종목</span>
                     <h3 className="text-3xl font-bold text-slate-900 mt-1">{analysis.asset}</h3>
                 </div>
                 <div className="flex flex-col items-end">
-                    <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Signal</span>
+                    <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">청개구리 신호</span>
                     <div className={cn(
                         "flex items-center gap-1 mt-1 px-3 py-1 rounded-full text-sm font-bold",
                         isBuy ? "bg-red-50 text-red-600" : isSell ? "bg-blue-50 text-blue-600" : "bg-slate-50 text-slate-600"
@@ -56,15 +56,15 @@ export function AnalysisCard({ data, className }: AnalysisCardProps) {
                 <div className="bg-slate-50 rounded-2xl p-5">
                     <div className="flex items-center gap-2 mb-3">
                         <span className="w-5 h-5 rounded-full bg-slate-200 flex items-center justify-center text-[10px]">🗣️</span>
-                        <h4 className="text-xs font-bold text-slate-500 uppercase">Jeon's Opinion</h4>
+                        <h4 className="text-xs font-bold text-slate-500 uppercase">인구의 픽 (Human Indicator)</h4>
                     </div>
                     <p className="text-slate-800 font-medium leading-relaxed text-sm">
                         "{analysis.jeon_logic}"
                     </p>
                     <div className="mt-4 flex items-center gap-2 text-xs font-semibold">
-                        <span className="text-slate-400">Prediction:</span>
+                        <span className="text-slate-400">라고 말해버림...:</span>
                         <span className={analysis.jeon_opinion > 0 ? "text-red-500" : "text-blue-500"}>
-                            {analysis.jeon_opinion > 0 ? "Bullish" : "Bearish"}
+                            {analysis.jeon_opinion > 0 ? "폭등 예언 📈" : "폭락 예언 📉"}
                         </span>
                     </div>
                 </div>
@@ -73,7 +73,7 @@ export function AnalysisCard({ data, className }: AnalysisCardProps) {
                 <div className={cn("rounded-2xl p-5 relative overflow-hidden", isBuy ? "bg-red-50/50" : isSell ? "bg-blue-50/50" : "bg-slate-50")}>
                     <div className="flex items-center gap-2 mb-3 relative z-10">
                         <div className={cn("w-5 h-5 rounded-full flex items-center justify-center text-white text-[10px]", isBuy ? "bg-red-500" : "bg-blue-500")}>AI</div>
-                        <h4 className={cn("text-xs font-bold uppercase", isBuy ? "text-red-600" : "text-blue-600")}>Oracle Strategy</h4>
+                        <h4 className={cn("text-xs font-bold uppercase", isBuy ? "text-red-600" : "text-blue-600")}>AI의 훈수</h4>
                     </div>
                     <p className="text-slate-900 font-medium leading-relaxed text-sm relative z-10">
                         "{analysis.oracle_logic}"
@@ -81,7 +81,7 @@ export function AnalysisCard({ data, className }: AnalysisCardProps) {
 
                     <div className="mt-4 pt-4 border-t border-black/5 relative z-10">
                         <div className="flex justify-between items-center mb-1">
-                            <span className="text-xs font-semibold opacity-70">Confidence Score</span>
+                            <span className="text-xs font-semibold opacity-70">확신 레벨</span>
                             <span className="text-sm font-bold">{Math.round(analysis.confidence * 100)}%</span>
                         </div>
                         <div className="h-1.5 w-full bg-black/5 rounded-full overflow-hidden">
@@ -96,7 +96,7 @@ export function AnalysisCard({ data, className }: AnalysisCardProps) {
 
             {/* Footer Metadata */}
             <div className="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center text-xs text-slate-400">
-                <span>Source: {data.title}</span>
+                <span>출처: {data.title}</span>
                 <span>{data.date}</span>
             </div>
         </div>

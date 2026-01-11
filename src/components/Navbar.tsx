@@ -33,7 +33,7 @@ export function Navbar() {
 
                     {/* Desktop Nav */}
                     <nav className="hidden md:flex gap-8 text-xs font-medium text-slate-700">
-                        {['Store', 'Mac', 'iPad', 'iPhone', 'Watch', 'AirPods', 'TV & Home', 'Entertainment'].map((item) => (
+                        {['홈', '포착된 종목', '승률 보기', '시뮬레이션', '이게 뭔데?'].map((item) => (
                             <a key={item} href="#" className="hover:text-black transition-colors opacity-80 hover:opacity-100">{item}</a>
                         ))}
                     </nav>
@@ -57,7 +57,7 @@ export function Navbar() {
                         exit={{ opacity: 0, y: -20 }}
                         className="fixed inset-0 top-14 bg-white z-40 md:hidden flex flex-col p-6 space-y-6"
                     >
-                        {['Store', 'Mac', 'iPad', 'iPhone', 'Watch', 'AirPods', 'TV & Home', 'Entertainment'].map((item) => (
+                        {['홈', '포착된 종목', '승률 보기', '시뮬레이션', '이게 뭔데?'].map((item) => (
                             <a
                                 key={item}
                                 href="#"

@@ -19,14 +19,38 @@ interface Analysis {
 interface VideoData {
   id: string;
   title: string;
-  description: string;
+  description?: string; // Made optional as some items might lack it
   analysis: Analysis;
-  date: string;
+  date?: string; // Made optional as 'publishedAt' exists in JSON
+  publishedAt?: string;
 }
 
 function App() {
-  // Cast the imported JSON data to the correct type
-  const data = analysisData as unknown as VideoData[];
+  // Normalize the data safely
+  const data: VideoData[] = (analysisData as any[]).map(item => {
+    // Check if it already has the nested structure (like the sample item)
+    if (item.analysis) {
+      return item as VideoData;
+    }
+
+    // Otherwise, map flat structure to nested structure
+    return {
+      id: item.id,
+      title: item.title,
+      description: item.description || "",
+      date: item.publishedAt ? new Date(item.publishedAt).toLocaleDateString() : (item.date || ""),
+      analysis: {
+        asset: item.asset,
+        jeon_opinion: item.jeon_opinion,
+        jeon_logic: item.jeon_logic,
+        oracle_signal: item.oracle_signal,
+        oracle_logic: item.oracle_logic,
+        confidence: item.confidence,
+        physiognomy_score: item.physiognomy_score,
+        timestamp: item.timestamp
+      }
+    };
+  });
 
   return (
     <div className="bg-[#f5f5f7] min-h-screen text-slate-900 font-sans selection:bg-indigo-500 selection:text-white">

@@ -11,11 +11,11 @@ export function Hero() {
                     className="mb-4"
                 >
                     <h2 className="text-xl md:text-3xl font-semibold text-indigo-600 mb-2">
-                        The Anti-Jeon Oracle
+                        전인구 인간지표 탐지기
                     </h2>
                     <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-slate-900 tracking-tight leading-tight">
-                        Think Different.<br />
-                        Trade Opposite.
+                        그가 살 때 팔고,<br />
+                        팔 때 사라.
                     </h1>
                 </motion.div>
 
@@ -25,7 +25,7 @@ export function Hero() {
                     transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                     className="mt-6 text-lg md:text-2xl text-slate-500 font-medium max-w-2xl mx-auto leading-relaxed"
                 >
-                    A revolutionary strategy powered by AI to counter-trade the "Human Indicator".
+                    성공을 위한 가장 확실한 지표, "인구"의 반대를 읽다.
                 </motion.p>
 
                 <motion.div
@@ -35,10 +35,10 @@ export function Hero() {
                     className="mt-10 flex gap-4 justify-center"
                 >
                     <button className="px-8 py-3 rounded-full bg-blue-600 text-white font-medium text-sm md:text-base hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/30">
-                        View Analytics
+                        포착된 종목 보기
                     </button>
                     <button className="px-8 py-3 rounded-full bg-white text-blue-600 font-medium text-sm md:text-base hover:bg-slate-50 transition-colors border border-slate-200">
-                        Learn More
+                        더 알아보기
                     </button>
                 </motion.div>
             </div>
