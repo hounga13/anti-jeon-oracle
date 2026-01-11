@@ -51,8 +51,17 @@ export function BentoGrid({ items, className }: BentoGridProps) {
                             />
                         </div>
 
-                        {/* Analysis Card */}
-                        <AnalysisCard data={highlight} className="w-full shadow-lg hover:shadow-xl ring-1 ring-black/5" />
+                        {/* Analysis Cards */}
+                        <div className="flex flex-col gap-6">
+                            {highlight.analysis.map((analysis, idx) => (
+                                <AnalysisCard
+                                    key={`${highlight.id}-${idx}`}
+                                    analysis={analysis}
+                                    video={highlight}
+                                    className="w-full shadow-lg hover:shadow-xl ring-1 ring-black/5"
+                                />
+                            ))}
+                        </div>
                     </div>
 
                     {/* Future: Secondary Grid for older items could go here */}

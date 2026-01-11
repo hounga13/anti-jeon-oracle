@@ -1,14 +1,14 @@
 import { cn } from '../lib/utils';
 import { TrendingUp, TrendingDown, Minus } from 'lucide-react';
-import type { VideoData } from '../lib/data';
+import type { VideoData, Analysis } from '../lib/data';
 
 interface AnalysisCardProps {
-    data: VideoData;
+    analysis: Analysis;
+    video: VideoData;
     className?: string;
 }
 
-export function AnalysisCard({ data, className }: AnalysisCardProps) {
-    const { analysis } = data;
+export function AnalysisCard({ analysis, video, className }: AnalysisCardProps) {
     const isBuy = analysis.oracle_signal === 'BUY';
     const isSell = analysis.oracle_signal === 'SELL';
 
@@ -87,15 +87,15 @@ export function AnalysisCard({ data, className }: AnalysisCardProps) {
                     <div className="flex items-center gap-1 overflow-hidden min-w-0">
                         <span className="flex-shrink-0">출처:</span>
                         <a
-                            href={`https://www.youtube.com/watch?v=${data.id}`}
+                            href={`https://www.youtube.com/watch?v=${video.id}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="truncate hover:text-indigo-600 hover:underline transition-colors block"
                         >
-                            {data.title}
+                            {video.title}
                         </a>
                     </div>
-                    <span className="flex-shrink-0 ml-2 whitespace-nowrap hidden sm:inline">{data.date}</span>
+                    <span className="flex-shrink-0 ml-2 whitespace-nowrap hidden sm:inline">{video.date}</span>
                 </div>
             </div>
         </div>

@@ -24,14 +24,20 @@ export function HistoryPage() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {data.map((item, index) => (
+                    {data.flatMap(video =>
+                        video.analysis.map((analysis, idx) => ({ video, analysis, key: `${video.id}-${idx}` }))
+                    ).map(({ video, analysis, key }, index) => (
                         <motion.div
-                            key={item.id}
+                            key={key}
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            transition={{ duration: 0.5, delay: index * 0.05 }}
                         >
-                            <AnalysisCard data={item} className="h-full hover:shadow-xl transition-shadow duration-300" />
+                            <AnalysisCard
+                                analysis={analysis}
+                                video={video}
+                                className="h-full hover:shadow-xl transition-shadow duration-300"
+                            />
                         </motion.div>
                     ))}
                 </div>
