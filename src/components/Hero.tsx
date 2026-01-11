@@ -25,7 +25,7 @@ export function Hero() {
                     transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                     className="mt-6 text-lg md:text-2xl text-slate-500 font-medium max-w-2xl mx-auto leading-relaxed"
                 >
-                    성공을 위한 가장 확실한 지표, "인구"의 반대를 읽다.
+                    인간지표 '인구신'의 반대편을 탐구하는 유쾌한 실험.
                 </motion.p>
 
                 <motion.div

@@ -33,7 +33,7 @@ export function BentoGrid({ items, className }: BentoGridProps) {
             <div className="w-full h-64 flex flex-col items-center justify-center bg-white rounded-3xl border border-slate-100 shadow-sm text-center p-8">
                 <div className="text-4xl mb-4">🔮</div>
                 <h3 className="text-lg font-bold text-slate-900">새로운 인간지표 찾는 중...</h3>
-                <p className="text-slate-500 text-sm mt-2">전인구 님의 영상이 올라오면 AI가 바로 분석합니다.</p>
+                <p className="text-slate-500 text-sm mt-2">전인구 님의 영상이 올라오면 실시간으로 분석합니다.</p>
             </div>
         );
     }
@@ -51,7 +51,7 @@ export function BentoGrid({ items, className }: BentoGridProps) {
             >
                 <div className="mb-10">
                     <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight">실시간 인간지표 포착</h2>
-                    <p className="text-lg text-slate-500 font-medium">AI가 분석한 반대매매 타이밍</p>
+                    <p className="text-lg text-slate-500 font-medium">데이터가 알려주는 반대매매 타이밍</p>
                 </div>
 
                 <div className="grid grid-cols-1 gap-8">

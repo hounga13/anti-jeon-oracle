@@ -62,9 +62,9 @@ export function AnalysisCard({ data, className }: AnalysisCardProps) {
                         "{analysis.jeon_logic}"
                     </p>
                     <div className="mt-4 flex items-center gap-2 text-xs font-semibold">
-                        <span className="text-slate-400">라고 말해버림...:</span>
+                        <span className="text-slate-400">인구신의 말씀:</span>
                         <span className={analysis.jeon_opinion > 0 ? "text-red-500" : "text-blue-500"}>
-                            {analysis.jeon_opinion > 0 ? "폭등 예언 📈" : "폭락 예언 📉"}
+                            {analysis.jeon_opinion > 0 ? "상승 전망 📈" : "하락 전망 📉"}
                         </span>
                     </div>
                 </div>
@@ -72,8 +72,8 @@ export function AnalysisCard({ data, className }: AnalysisCardProps) {
                 {/* Oracle's Logic */}
                 <div className={cn("rounded-2xl p-5 relative overflow-hidden", isBuy ? "bg-red-50/50" : isSell ? "bg-blue-50/50" : "bg-slate-50")}>
                     <div className="flex items-center gap-2 mb-3 relative z-10">
-                        <div className={cn("w-5 h-5 rounded-full flex items-center justify-center text-white text-[10px]", isBuy ? "bg-red-500" : "bg-blue-500")}>AI</div>
-                        <h4 className={cn("text-xs font-bold uppercase", isBuy ? "text-red-600" : "text-blue-600")}>AI의 훈수</h4>
+                        <div className={cn("w-5 h-5 rounded-full flex items-center justify-center text-white text-[10px]", isBuy ? "bg-red-500" : "bg-blue-500")}>🐸</div>
+                        <h4 className={cn("text-xs font-bold uppercase", isBuy ? "text-red-600" : "text-blue-600")}>청개구리 훈수</h4>
                     </div>
                     <p className="text-slate-900 font-medium leading-relaxed text-sm relative z-10">
                         "{analysis.oracle_logic}"
