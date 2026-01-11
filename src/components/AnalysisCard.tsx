@@ -1,24 +1,6 @@
 import { cn } from '../lib/utils';
 import { TrendingUp, TrendingDown, Minus } from 'lucide-react';
-
-interface Analysis {
-    asset: string;
-    jeon_opinion: number;
-    jeon_logic: string;
-    oracle_signal: "BUY" | "SELL" | "HOLD";
-    oracle_logic: string;
-    confidence: number;
-    physiognomy_score: number;
-    timestamp: string;
-}
-
-interface VideoData {
-    id: string;
-    title: string;
-    description?: string;
-    analysis: Analysis;
-    date?: string;
-}
+import type { VideoData } from '../lib/data';
 
 interface AnalysisCardProps {
     data: VideoData;
@@ -37,16 +19,6 @@ export function AnalysisCard({ data, className }: AnalysisCardProps) {
                 <div>
                     <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">종목</span>
                     <h3 className="text-3xl font-bold text-slate-900 mt-1">{analysis.asset}</h3>
-                </div>
-                <div className="flex flex-col items-end">
-                    <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">청개구리 신호</span>
-                    <div className={cn(
-                        "flex items-center gap-1 mt-1 px-3 py-1 rounded-full text-sm font-bold",
-                        isBuy ? "bg-red-50 text-red-600" : isSell ? "bg-blue-50 text-blue-600" : "bg-slate-50 text-slate-600"
-                    )}>
-                        {isBuy ? <TrendingUp size={16} /> : isSell ? <TrendingDown size={16} /> : <Minus size={16} />}
-                        {analysis.oracle_signal}
-                    </div>
                 </div>
             </div>
 
@@ -78,6 +50,13 @@ export function AnalysisCard({ data, className }: AnalysisCardProps) {
                         <div className="flex items-center gap-2">
                             <div className={cn("w-5 h-5 rounded-full flex items-center justify-center text-white text-[10px]", isBuy ? "bg-red-500" : "bg-blue-500")}>🐸</div>
                             <h4 className={cn("text-xs font-bold uppercase", isBuy ? "text-red-600" : "text-blue-600")}>청개구리 AI</h4>
+                        </div>
+                        <div className={cn(
+                            "flex items-center gap-1 mt-1 px-3 py-1 rounded-full text-sm font-bold",
+                            isBuy ? "bg-red-50 text-red-600" : isSell ? "bg-blue-50 text-blue-600" : "bg-slate-50 text-slate-600"
+                        )}>
+                            {isBuy ? <TrendingUp size={16} /> : isSell ? <TrendingDown size={16} /> : <Minus size={16} />}
+                            {analysis.oracle_signal}
                         </div>
                     </div>
                     <p className="text-slate-900 font-medium leading-relaxed text-sm relative z-10 text-center">

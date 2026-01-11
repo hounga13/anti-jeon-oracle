@@ -1,26 +1,7 @@
 import { AnalysisCard } from './AnalysisCard';
 import { cn } from '../lib/utils';
 import { motion } from 'framer-motion';
-
-// Re-using the interfaces for now, realistically should be imported
-interface Analysis {
-    asset: string;
-    jeon_opinion: number;
-    jeon_logic: string;
-    oracle_signal: "BUY" | "SELL" | "HOLD";
-    oracle_logic: string;
-    confidence: number;
-    physiognomy_score: number;
-    timestamp: string;
-}
-
-interface VideoData {
-    id: string;
-    title: string;
-    description?: string;
-    analysis: Analysis;
-    date?: string;
-}
+import type { VideoData } from '../lib/data';
 
 interface BentoGridProps {
     items: VideoData[];

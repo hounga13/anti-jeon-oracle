@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { cn } from '../lib/utils';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -15,6 +16,12 @@ export function Navbar() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const navItems = [
+        { name: '홈', path: '/' },
+        { name: '청개구리 히스토리', path: '/history' },
+        // { name: '이게 뭔데?', path: '/about' } // Reserved for future
+    ];
+
     return (
         <>
             <header
@@ -24,17 +31,19 @@ export function Navbar() {
                 )}
             >
                 <div className="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">
-                    <a href="#" className="flex items-center gap-2 group">
+                    <Link to="/" className="flex items-center gap-2 group">
                         {/* Apple-style minimalist logo/icon */}
                         <span className="text-lg font-semibold tracking-tighter text-slate-900 group-hover:opacity-80 transition-opacity">
                             Anti-Jeon
                         </span>
-                    </a>
+                    </Link>
 
                     {/* Desktop Nav */}
                     <nav className="hidden md:flex gap-8 text-xs font-medium text-slate-700">
-                        {['홈', '포착된 종목', '이게 뭔데?'].map((item) => (
-                            <a key={item} href="#" className="hover:text-black transition-colors opacity-80 hover:opacity-100">{item}</a>
+                        {navItems.map((item) => (
+                            <Link key={item.name} to={item.path} className="hover:text-black transition-colors opacity-80 hover:opacity-100">
+                                {item.name}
+                            </Link>
                         ))}
                     </nav>
 
@@ -57,15 +66,15 @@ export function Navbar() {
                         exit={{ opacity: 0, y: -20 }}
                         className="fixed inset-0 top-14 bg-white z-40 md:hidden flex flex-col p-6 space-y-6"
                     >
-                        {['홈', '포착된 종목', '이게 뭔데?'].map((item) => (
-                            <a
-                                key={item}
-                                href="#"
+                        {navItems.map((item) => (
+                            <Link
+                                key={item.name}
+                                to={item.path}
                                 className="text-2xl font-semibold text-slate-900 border-b border-slate-100 pb-4"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
-                                {item}
-                            </a>
+                                {item.name}
+                            </Link>
                         ))}
                     </motion.div>
                 )}
