@@ -35,8 +35,25 @@ export function BentoGrid({ items, className }: BentoGridProps) {
                 </div>
 
                 <div className="grid grid-cols-1 gap-8">
-                    {/* Highlighted Main Card */}
-                    <AnalysisCard data={highlight} className="w-full shadow-lg hover:shadow-xl ring-1 ring-black/5" />
+                    {/* Main Highlight Section */}
+                    <div className="flex flex-col gap-6">
+                        {/* YouTube Embed */}
+                        <div className="w-full aspect-video rounded-3xl overflow-hidden shadow-lg border border-slate-100 bg-black">
+                            <iframe
+                                width="100%"
+                                height="100%"
+                                src={`https://www.youtube.com/embed/${highlight.id}`}
+                                title={highlight.title}
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                className="w-full h-full"
+                            />
+                        </div>
+
+                        {/* Analysis Card */}
+                        <AnalysisCard data={highlight} className="w-full shadow-lg hover:shadow-xl ring-1 ring-black/5" />
+                    </div>
 
                     {/* Future: Secondary Grid for older items could go here */}
                     {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

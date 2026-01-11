@@ -81,11 +81,25 @@ export function AnalysisCard({ data, className }: AnalysisCardProps) {
                 </div>
             </div>
 
-            {/* Footer Metadata */}
-            <div className="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center text-xs text-slate-400">
-                <span>출처: {data.title}</span>
-                <span>{data.date}</span>
+            {/* Engagement & Source Actions */}
+            <div className="mt-6 pt-4 border-t border-slate-100 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-400 gap-4">
+                <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-1 overflow-hidden">
+                        <span className="flex-shrink-0">출처:</span>
+                        <a
+                            href={`https://www.youtube.com/watch?v=${data.id}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="truncate hover:text-indigo-600 hover:underline transition-colors"
+                        >
+                            {data.title}
+                        </a>
+                    </div>
+                    <span className="flex-shrink-0 ml-2 hidden sm:inline">{data.date}</span>
+                </div>
             </div>
         </div>
     );
 }
+
+
