@@ -56,7 +56,7 @@ export function AnalysisCard({ data, className }: AnalysisCardProps) {
                 <div className="bg-slate-50 rounded-2xl p-5">
                     <div className="flex items-center gap-2 mb-3">
                         <span className="w-5 h-5 rounded-full bg-slate-200 flex items-center justify-center text-[10px]">🗣️</span>
-                        <h4 className="text-xs font-bold text-slate-500 uppercase">인구의 픽 (Human Indicator)</h4>
+                        <h4 className="text-xs font-bold text-slate-500 uppercase">인구신의 발언 요약</h4>
                     </div>
                     <p className="text-slate-800 font-medium leading-relaxed text-sm">
                         "{analysis.jeon_logic}"
@@ -73,10 +73,13 @@ export function AnalysisCard({ data, className }: AnalysisCardProps) {
                 <div className={cn("rounded-2xl p-5 relative overflow-hidden", isBuy ? "bg-red-50/50" : isSell ? "bg-blue-50/50" : "bg-slate-50")}>
                     <div className="flex items-center gap-2 mb-3 relative z-10">
                         <div className={cn("w-5 h-5 rounded-full flex items-center justify-center text-white text-[10px]", isBuy ? "bg-red-500" : "bg-blue-500")}>🐸</div>
-                        <h4 className={cn("text-xs font-bold uppercase", isBuy ? "text-red-600" : "text-blue-600")}>청개구리 훈수</h4>
+                        <h4 className={cn("text-xs font-bold uppercase", isBuy ? "text-red-600" : "text-blue-600")}>청개구리 AI</h4>
                     </div>
                     <p className="text-slate-900 font-medium leading-relaxed text-sm relative z-10">
                         "{analysis.oracle_logic}"
+                    </p>
+                    <p className="mt-2 text-[10px] text-slate-400 font-medium opacity-80 relative z-10">
+                        ※ AI도 가끔은 헛발질을 합니다. 맹신은 금물! 재미로만 봐주세요 🐸
                     </p>
 
                     <div className="mt-4 pt-4 border-t border-black/5 relative z-10">
