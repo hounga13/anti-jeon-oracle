@@ -34,7 +34,7 @@ export function Navbar() {
                     <Link to="/" className="flex items-center gap-2 group">
                         {/* Apple-style minimalist logo/icon */}
                         <span className="text-lg font-semibold tracking-tighter text-slate-900 group-hover:opacity-80 transition-opacity">
-                            Anti-Jeon
+                            전인구 탐지기
                         </span>
                     </Link>
 
