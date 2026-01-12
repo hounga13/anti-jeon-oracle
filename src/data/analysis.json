@@ -1,5 +1,19 @@
 [
   {
+    "id": "9SuIzOpH-PA",
+    "title": "환율 다시 오르는데 어떡하지? / 무너지는 나스닥 / 방산주 2차랠리 / 대법원 관세 가능성",
+    "thumbnail": "https://i.ytimg.com/vi/9SuIzOpH-PA/hqdefault.jpg",
+    "publishedAt": "2026-01-12T11:03:50Z",
+    "asset": "환율",
+    "jeon_opinion": 0.7,
+    "jeon_logic": "환율이 다시 오를 가능성이 있다고 언급하며, 상승에 무게를 싣고 있습니다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "환율은 하락 안정화될 것이며, 지금이 환전 적기입니다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00 (영상 전체 맥락)"
+  },
+  {
     "id": "h4tb8u48XHE",
     "title": "퇴직연금를 기금화하려는 진짜 목적(ft.국민연금)",
     "thumbnail": "https://i.ytimg.com/vi/h4tb8u48XHE/hqdefault.jpg",
