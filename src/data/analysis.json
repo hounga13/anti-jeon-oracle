@@ -1,5 +1,19 @@
 [
   {
+    "id": "KAYJQkhid3k",
+    "title": "두쫀쿠 사태 / 심각한 이란 시위 상황 / CPI 예상 / 미국주식 뭐살까",
+    "thumbnail": "https://i.ytimg.com/vi/KAYJQkhid3k/hqdefault.jpg",
+    "publishedAt": "2026-01-13T11:07:35Z",
+    "asset": "미국 주식",
+    "jeon_opinion": 0.3,
+    "jeon_logic": "미국 주식 시장은 CPI 발표와 이란 시위 상황에 따라 변동성이 예상되지만, 장기적으로는 긍정적인 흐름을 보일 것이다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "미국 주식 시장은 CPI 발표와 이란 시위 상황으로 인해 하락세를 겪을 가능성이 높으므로 지금은 매도해야 한다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:15"
+  },
+  {
     "id": "9ggky-EC7HI",
     "title": "미국 바이오 이 주식은 꼭 사세요(ft.강하나 대표 3부)",
     "thumbnail": "https://i.ytimg.com/vi/9ggky-EC7HI/hqdefault.jpg",
