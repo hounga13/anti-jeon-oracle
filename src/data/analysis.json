@@ -1,5 +1,19 @@
 [
   {
+    "id": "aiTk8w5Ljf0",
+    "title": "코스피 다음주 5000 돌파가능성, 다카이치 총리 리스크, 엔비디아 악재",
+    "thumbnail": "https://i.ytimg.com/vi/aiTk8w5Ljf0/hqdefault.jpg",
+    "publishedAt": "2026-01-14T11:01:53Z",
+    "asset": "코스피",
+    "jeon_opinion": 0.7,
+    "jeon_logic": "다음 주 5000 돌파 가능성이 있다고 주장",
+    "oracle_signal": "SELL",
+    "oracle_logic": "5000 돌파를 외치는 순간 하락장이 시작될 수 있으니 경계해야 한다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00 (영상 초반부, 추정)"
+  },
+  {
     "id": "mKe3nAT7B-4",
     "title": "심상치 않은 환율, 1500원 넘기는 거 아닌가?",
     "thumbnail": "https://i.ytimg.com/vi/mKe3nAT7B-4/hqdefault.jpg",
