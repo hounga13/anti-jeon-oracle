@@ -1,5 +1,19 @@
 [
   {
+    "id": "mKe3nAT7B-4",
+    "title": "심상치 않은 환율, 1500원 넘기는 거 아닌가?",
+    "thumbnail": "https://i.ytimg.com/vi/mKe3nAT7B-4/hqdefault.jpg",
+    "publishedAt": "2026-01-14T02:43:33Z",
+    "asset": "환율/달러",
+    "jeon_opinion": -0.8,
+    "jeon_logic": "현재 환율이 심상치 않으며, 1500원을 넘길 가능성이 있다고 경고하며 불안감을 조성.",
+    "oracle_signal": "BUY",
+    "oracle_logic": "환율 상승을 경고하지만, 실제로는 하락할 가능성이 높으며 지금이 매수 적기이다.",
+    "confidence": 0.7,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "KAYJQkhid3k",
     "title": "두쫀쿠 사태 / 심각한 이란 시위 상황 / CPI 예상 / 미국주식 뭐살까",
     "thumbnail": "https://i.ytimg.com/vi/KAYJQkhid3k/hqdefault.jpg",
