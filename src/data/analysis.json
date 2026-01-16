@@ -1,5 +1,19 @@
 [
   {
+    "id": "-dDr0WNjMkw",
+    "title": "인플레이션이 진짜 무서운 이유",
+    "thumbnail": "https://i.ytimg.com/vi/-dDr0WNjMkw/hqdefault.jpg",
+    "publishedAt": "2026-01-16T09:17:06Z",
+    "asset": "스팀청소기",
+    "jeon_opinion": -0.8,
+    "jeon_logic": "정상가 대비 핫딜가가 매우 저렴하므로 지금 사지 않으면 손해다.",
+    "oracle_signal": "BUY",
+    "oracle_logic": "수량 한정이라는 말에 현혹되지 말고 정말 필요한지, 더 저렴한 제품은 없는지 꼼꼼히 따져보라.",
+    "confidence": 0.7,
+    "physiognomy_score": 50,
+    "timestamp": "00:05"
+  },
+  {
     "id": "ImkNaJInHNU",
     "title": "코스피 이제 팔자/ 환율조림 이야기 / 비트코인과 해외거래소 차단 / 미국 은행주 폭락",
     "thumbnail": "https://i.ytimg.com/vi/ImkNaJInHNU/hqdefault.jpg",
