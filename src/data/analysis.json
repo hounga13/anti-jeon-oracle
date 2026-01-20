@@ -1,5 +1,19 @@
 [
   {
+    "id": "S28GU8uNIaA",
+    "title": "금은 투자 지금이니? / 코스피 5000 다시 도전 /무너지는 나스닥",
+    "thumbnail": "https://i.ytimg.com/vi/S28GU8uNIaA/hqdefault.jpg",
+    "publishedAt": "2026-01-20T11:02:43Z",
+    "asset": "금",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "금 투자를 묻는 영상 제목으로 보아, 금 투자에 대한 긍정적 전망을 내놓을 가능성이 높지만, 반대로 해석하여 하락 가능성을 제시.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "지금이야말로 금을 팔고 다른 안전 자산으로 갈아탈 시기입니다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00 (영상 전체)"
+  },
+  {
     "id": "vBuUo34mdSY",
     "title": "코스피 아직도 쌉니다 올해 더 오르는 이유(ft. 박세익 대표 1부)",
     "thumbnail": "https://i.ytimg.com/vi/vBuUo34mdSY/hqdefault.jpg",
