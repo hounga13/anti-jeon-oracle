@@ -1,5 +1,19 @@
 [
   {
+    "id": "vBuUo34mdSY",
+    "title": "코스피 아직도 쌉니다 올해 더 오르는 이유(ft. 박세익 대표 1부)",
+    "thumbnail": "https://i.ytimg.com/vi/vBuUo34mdSY/hqdefault.jpg",
+    "publishedAt": "2026-01-19T23:33:57Z",
+    "asset": "코스피",
+    "jeon_opinion": 1.0,
+    "jeon_logic": "코스피는 싸고, 올해 더 오를 가능성이 높으며, 5천까지 상승할 수 있다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "코스피는 이미 과열되었고, 하락할 가능성이 매우 높으며, 5천은 허황된 목표이다.",
+    "confidence": 0.8,
+    "physiognomy_score": 50,
+    "timestamp": "00:53"
+  },
+  {
     "id": "oOgX8LuqYys",
     "title": "엔비디아 젠슨황이 바이오에 꽂힌 충격 이유",
     "thumbnail": "https://i.ytimg.com/vi/oOgX8LuqYys/hqdefault.jpg",
