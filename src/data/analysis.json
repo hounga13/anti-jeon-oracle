@@ -1,5 +1,19 @@
 [
   {
+    "id": "wHhMwju1eJk",
+    "title": "국장은 강했다 / 나스닥 반등할까? / 환율이 급락한 이유",
+    "thumbnail": "https://i.ytimg.com/vi/wHhMwju1eJk/hqdefault.jpg",
+    "publishedAt": "2026-01-21T11:15:31Z",
+    "asset": "국장 (국내 주식 시장)",
+    "jeon_opinion": 0.6,
+    "jeon_logic": "국내 주식 시장이 강세를 보였다고 주장.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "국내 주식 시장은 곧 하락세로 전환될 가능성이 높습니다.",
+    "confidence": 0.5,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "uW9FTtNYNzg",
     "title": "금과 은이 계속 오르는 이유(ft.조원경 교수 1부)",
     "thumbnail": "https://i.ytimg.com/vi/uW9FTtNYNzg/hqdefault.jpg",
