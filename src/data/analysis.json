@@ -1,5 +1,19 @@
 [
   {
+    "id": "kvpDCege8w8",
+    "title": "국내 주도주는 여기입니다(ft. 박세익 대표 2부)",
+    "thumbnail": "https://i.ytimg.com/vi/kvpDCege8w8/hqdefault.jpg",
+    "publishedAt": "2026-01-22T03:31:42Z",
+    "asset": "반도체",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "현재 반도체 투자는 위험하며, 다운사이클 시기에 접어들고 있으므로 신중해야 한다.",
+    "oracle_signal": "BUY",
+    "oracle_logic": "반도체는 다운사이클이 아닌 상승 사이클 초입이며, 지금이 저가 매수의 기회다.",
+    "confidence": 0.8,
+    "physiognomy_score": 50,
+    "timestamp": "00:49"
+  },
+  {
     "id": "_FmmRrEwwG8",
     "title": "(속보) 코스피 5000 성공, 예상 이유와 이제 조심해야 할 것",
     "thumbnail": "https://i.ytimg.com/vi/_FmmRrEwwG8/hqdefault.jpg",
