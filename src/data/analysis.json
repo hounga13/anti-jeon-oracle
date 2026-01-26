@@ -1,5 +1,19 @@
 [
   {
+    "id": "noDCCcZPjBE",
+    "title": "코스닥만 오른다 / SK하이닉스 하락  이유 / 급락하는 환율",
+    "thumbnail": "https://i.ytimg.com/vi/noDCCcZPjBE/hqdefault.jpg",
+    "publishedAt": "2026-01-26T11:11:59Z",
+    "asset": "코스닥",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "코스닥만 오른다고 주장",
+    "oracle_signal": "SELL",
+    "oracle_logic": "코스닥 상승은 일시적인 현상이며, 곧 하락세로 전환될 가능성이 높다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "4ut8089Ra7k",
     "title": "삼성전자, SK하이닉스 지금은 매도할 때가 아닙니다(ft.조윤남 대표 2부)",
     "thumbnail": "https://i.ytimg.com/vi/4ut8089Ra7k/hqdefault.jpg",
