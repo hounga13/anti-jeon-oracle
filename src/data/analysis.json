@@ -1,5 +1,19 @@
 [
   {
+    "id": "FLwd97yGfm0",
+    "title": "연준의장이 바뀌면 비트코인은 어떻게 될까?",
+    "thumbnail": "https://i.ytimg.com/vi/FLwd97yGfm0/hqdefault.jpg",
+    "publishedAt": "2026-01-26T22:00:15Z",
+    "asset": "비트코인",
+    "jeon_opinion": 0.7,
+    "jeon_logic": "연준 의장 교체와 비트코인 가격 상승의 연관성을 긍정적으로 전망하며, 관련 도서까지 추천하는 것으로 보아 비트코인 상승에 무게를 싣고 있다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "연준 의장이 교체되면 불확실성이 커져 비트코인은 오히려 하락할 가능성이 높다.",
+    "confidence": 0.8,
+    "physiognomy_score": 50,
+    "timestamp": "00:00 (영상 전체에 걸쳐 해당 내용이 드러남)"
+  },
+  {
     "id": "noDCCcZPjBE",
     "title": "코스닥만 오른다 / SK하이닉스 하락  이유 / 급락하는 환율",
     "thumbnail": "https://i.ytimg.com/vi/noDCCcZPjBE/hqdefault.jpg",
