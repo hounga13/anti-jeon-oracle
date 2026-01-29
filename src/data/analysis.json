@@ -1,5 +1,19 @@
 [
   {
+    "id": "FO0mXo0m_IQ",
+    "title": "순환매 장세 이 주식 사야 돈 법니다(ft. 이경민 부장 1부)",
+    "thumbnail": "https://i.ytimg.com/vi/FO0mXo0m_IQ/hqdefault.jpg",
+    "publishedAt": "2026-01-29T12:25:15Z",
+    "asset": "2차전지",
+    "jeon_opinion": 0.7,
+    "jeon_logic": "2차전지는 이미 급등했고 상승 기간에 있다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "2차전지는 급등했으므로 곧 하락세로 전환될 가능성이 높다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:42"
+  },
+  {
     "id": "cvMngriiriA",
     "title": "실적이 잘나오고 주가가 급락한 MS, 오히려 삼성전자, SK하이닉스에 호재가 될 수도",
     "thumbnail": "https://i.ytimg.com/vi/cvMngriiriA/hqdefault.jpg",
