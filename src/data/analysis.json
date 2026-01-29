@@ -1,5 +1,19 @@
 [
   {
+    "id": "cvMngriiriA",
+    "title": "실적이 잘나오고 주가가 급락한 MS, 오히려 삼성전자, SK하이닉스에 호재가 될 수도",
+    "thumbnail": "https://i.ytimg.com/vi/cvMngriiriA/hqdefault.jpg",
+    "publishedAt": "2026-01-29T00:24:47Z",
+    "asset": "삼성전자",
+    "jeon_opinion": 0.7,
+    "jeon_logic": "MS 실적 부진에도 삼성전자, SK하이닉스에 호재가 될 수 있다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "MS 실적 부진은 반도체 수요 둔화를 의미하며, 삼성전자와 SK하이닉스에 악재로 작용할 것이다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "Dzu1mhesxDE",
     "title": "기관이 연일 코스닥을 사는 이유 / 테슬라, 메타, MS 실적 예상 / 금 어디까지 오르나",
     "thumbnail": "https://i.ytimg.com/vi/Dzu1mhesxDE/hqdefault.jpg",
