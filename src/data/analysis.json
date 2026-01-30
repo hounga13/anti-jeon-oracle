@@ -1,5 +1,19 @@
 [
   {
+    "id": "baYPQxrnYi4",
+    "title": "하락장을 코스피 상승장으로 바꾸는 샌디스크 실적 호재(SK하이닉스, 삼성전자)",
+    "thumbnail": "https://i.ytimg.com/vi/baYPQxrnYi4/hqdefault.jpg",
+    "publishedAt": "2026-01-30T02:35:30Z",
+    "asset": "코스피",
+    "jeon_opinion": 0.8,
+    "jeon_logic": "샌디스크 실적 호재로 코스피 상승 가능성이 높음",
+    "oracle_signal": "SELL",
+    "oracle_logic": "샌디스크 실적 호재는 일시적이며, 코스피 하락 추세를 막기에는 역부족일 것이다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "FO0mXo0m_IQ",
     "title": "순환매 장세 이 주식 사야 돈 법니다(ft. 이경민 부장 1부)",
     "thumbnail": "https://i.ytimg.com/vi/FO0mXo0m_IQ/hqdefault.jpg",
