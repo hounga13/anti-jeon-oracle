@@ -1,5 +1,19 @@
 [
   {
+    "id": "IztMJoUZB5s",
+    "title": "삼성전자 10% 상승, 코스피 사상 최고치, AMD 실적 예상",
+    "thumbnail": "https://i.ytimg.com/vi/IztMJoUZB5s/hqdefault.jpg",
+    "publishedAt": "2026-02-03T11:09:42Z",
+    "asset": "삼성전자",
+    "jeon_opinion": 0.7,
+    "jeon_logic": "영상 제목에서 삼성전자 10% 상승을 언급하며 갤럭시S23 FE 핫딜 광고를 통해 간접적인 긍정적 전망을 시사한다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "삼성전자 상승을 부추기는 것은 고점에서 물량 떠넘기기를 위한 수작일 가능성이 높으므로 지금은 팔아야 한다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "BTWAngrmGfc",
     "title": "코스피 5000 투자 전략 이렇게 해야 됩니다(ft. 이경민 부장 2부)",
     "thumbnail": "https://i.ytimg.com/vi/BTWAngrmGfc/hqdefault.jpg",
