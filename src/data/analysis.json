@@ -1,5 +1,19 @@
 [
   {
+    "id": "cy_U5v4o-c8",
+    "title": "삼성전자 지금 사도 되나요? / 이제 무섭다 코스피 어디까지 가나? / 구글 실적 예상하기",
+    "thumbnail": "https://i.ytimg.com/vi/cy_U5v4o-c8/hqdefault.jpg",
+    "publishedAt": "2026-02-04T11:09:23Z",
+    "asset": "삼성전자",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "코스피 변동성이 커지고 있어 삼성전자 매수를 주저하게 될 수 있음. '지금 사도 되나요?'라는 질문 자체가 불안 심리를 반영.",
+    "oracle_signal": "BUY",
+    "oracle_logic": "변동성이 커질수록 저가 매수의 기회가 늘어나므로, 오히려 지금이 삼성전자 매수의 최적기이다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "IztMJoUZB5s",
     "title": "삼성전자 10% 상승, 코스피 사상 최고치, AMD 실적 예상",
     "thumbnail": "https://i.ytimg.com/vi/IztMJoUZB5s/hqdefault.jpg",
