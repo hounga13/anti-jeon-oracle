@@ -1,5 +1,19 @@
 [
   {
+    "id": "XAJqKI8IIpI",
+    "title": "앞으로 조선주가 더 상승할 수 있는 이유(ft.엄경아 연구원)",
+    "thumbnail": "https://i.ytimg.com/vi/XAJqKI8IIpI/hqdefault.jpg",
+    "publishedAt": "2026-02-05T04:52:21Z",
+    "asset": "조선주",
+    "jeon_opinion": 0.7,
+    "jeon_logic": "25년 급등에 이어 26년에도 호재가 많고, 특히 LNG선 수요 증가와 정부 지원, 경쟁국인 중국의 위협 감소 등으로 추가 상승 가능성이 높다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "조선업은 경기 변동에 민감하며, 숨겨진 부실과 환율 변동, 그리고 중국의 기술 추격으로 인해 예상치 못한 급락이 발생할 수 있다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "29:38"
+  },
+  {
     "id": "cy_U5v4o-c8",
     "title": "삼성전자 지금 사도 되나요? / 이제 무섭다 코스피 어디까지 가나? / 구글 실적 예상하기",
     "thumbnail": "https://i.ytimg.com/vi/cy_U5v4o-c8/hqdefault.jpg",
