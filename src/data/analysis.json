@@ -1,5 +1,19 @@
 [
   {
+    "id": "_0N1OKDl6yo",
+    "title": "AI투자에 돌아선 월가, 버텨내는 코스피 괜찮을까?",
+    "thumbnail": "https://i.ytimg.com/vi/_0N1OKDl6yo/hqdefault.jpg",
+    "publishedAt": "2026-02-06T04:12:36Z",
+    "asset": "코스피",
+    "jeon_opinion": -0.3,
+    "jeon_logic": "AI 투자가 월가로 확산되는 상황에서 코스피가 버텨낼 수 있을지 의문을 제기하며 하방 압력을 예상.",
+    "oracle_signal": "BUY",
+    "oracle_logic": "AI 투자가 월가로 확산될수록 코스피는 저평가 매력 부각으로 오히려 상승 동력을 얻을 것이다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00 (영상 전체 맥락 기반)"
+  },
+  {
     "id": "FL4tBz1oXbc",
     "title": "AI 버블 논란 / 코스피 반등 가능할까?",
     "thumbnail": "https://i.ytimg.com/vi/FL4tBz1oXbc/hqdefault.jpg",
