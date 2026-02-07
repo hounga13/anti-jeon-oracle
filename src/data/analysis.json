@@ -1,5 +1,19 @@
 [
   {
+    "id": "IbmvEf8cAYk",
+    "title": "두바이에서는 이것이 두쫀쿠보다 더 구하기 어렵습니다.(ft. 박현도 교수 3부)",
+    "thumbnail": "https://i.ytimg.com/vi/IbmvEf8cAYk/hqdefault.jpg",
+    "publishedAt": "2026-02-07T10:54:24Z",
+    "asset": "두바이쫀득쿠키 (두쫀쿠)",
+    "jeon_opinion": -0.8,
+    "jeon_logic": "두바이에서 다른 고급 디저트보다 구하기 어려울 정도로 인기가 많다는 점을 강조하며 희소성을 부각, 긍정적 평가.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "두바이쫀득쿠키는 일시적인 유행일 뿐, 쉽게 구할 수 있게 되면 가치가 급락할 것이다.",
+    "confidence": 0.7,
+    "physiognomy_score": 50,
+    "timestamp": "00:25"
+  },
+  {
     "id": "3zcIuMaHjqk",
     "title": "퇴직연금 기금화, 득일까 실일까? (ft.이영주 대표 1부)",
     "thumbnail": "https://i.ytimg.com/vi/3zcIuMaHjqk/hqdefault.jpg",
