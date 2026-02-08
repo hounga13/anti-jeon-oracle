@@ -1,5 +1,19 @@
 [
   {
+    "id": "Zme9D2-bg58",
+    "title": "이제 내 집 마련 가능한 곳 여기밖에 없습니다(ft.김학렬 소장 2부)",
+    "thumbnail": "https://i.ytimg.com/vi/Zme9D2-bg58/hqdefault.jpg",
+    "publishedAt": "2026-02-08T03:07:19Z",
+    "asset": "부동산 (15억 이하 아파트)",
+    "jeon_opinion": 1.0,
+    "jeon_logic": "15억 이하 아파트들이 신고가를 갱신하고 있으며, 이는 상승 추세의 시작을 의미한다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "신고가 갱신은 거품의 정점을 의미하며, 곧 하락세로 전환될 가능성이 매우 높다.",
+    "confidence": 0.8,
+    "physiognomy_score": 50,
+    "timestamp": "02:39"
+  },
+  {
     "id": "n67whl708bs",
     "title": "미국이 이란을 공격할 수 없는 이유(ft.중동전문가 박현도 교수 1부)",
     "thumbnail": "https://i.ytimg.com/vi/n67whl708bs/hqdefault.jpg",
