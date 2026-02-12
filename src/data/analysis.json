@@ -1,5 +1,19 @@
 [
   {
+    "id": "WvJrUsyRf58",
+    "title": "저는 ETF에 1,000만 원 투자해서 월 300만 원 배당받습니다(ft.임승현 작가 1부)",
+    "thumbnail": "https://i.ytimg.com/vi/WvJrUsyRf58/hqdefault.jpg",
+    "publishedAt": "2026-02-12T09:43:39Z",
+    "asset": "커버드콜 ETF",
+    "jeon_opinion": -0.8,
+    "jeon_logic": "1,000만원으로 월 300만원 배당은 과장 광고이며, 커버드콜 ETF는 금리 인상기에 취약하고, 시장 하락 시 원금 손실 위험이 높다.",
+    "oracle_signal": "BUY",
+    "oracle_logic": "금리 인하가 예상되는 시점에서는 커버드콜 ETF의 매력도가 상승하고, 안정적인 월 배당은 투자 포트폴리오의 안정성을 높인다.",
+    "confidence": 0.7,
+    "physiognomy_score": 50,
+    "timestamp": "13:33"
+  },
+  {
     "id": "PcnIU_m0wcE",
     "title": "토허제 실거주 잠시 풀리면 강남 집값 잡힐까?(ft.윤지영 중개사)",
     "thumbnail": "https://i.ytimg.com/vi/PcnIU_m0wcE/hqdefault.jpg",
