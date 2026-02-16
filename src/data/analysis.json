@@ -1,5 +1,19 @@
 [
   {
+    "id": "VK23CREsKE8",
+    "title": "이란과 미국이 전쟁을 하면 경제는 큰일납니다(ft. 박현도 교수 2부)",
+    "thumbnail": "https://i.ytimg.com/vi/VK23CREsKE8/hqdefault.jpg",
+    "publishedAt": "2026-02-15T23:35:50Z",
+    "asset": "석유",
+    "jeon_opinion": -0.8,
+    "jeon_logic": "미국과 이란의 전쟁 가능성 고조는 석유 가격 폭등을 야기, 경제 위기를 심화시킬 수 있다.",
+    "oracle_signal": "BUY",
+    "oracle_logic": "미국과 이란의 전쟁은 단기적 변동성을 야기하겠지만, 결국 새로운 에너지 기술 개발을 촉진하여 장기적으로 석유 수요를 감소시킬 것이다.",
+    "confidence": 0.7,
+    "physiognomy_score": 50,
+    "timestamp": "00:31"
+  },
+  {
     "id": "siFx15MfqYc",
     "title": "다카이치 진짜 무서운 사람입니다(ft.호사카 유지 교수 1부)",
     "thumbnail": "https://i.ytimg.com/vi/siFx15MfqYc/hqdefault.jpg",
