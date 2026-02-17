@@ -1,5 +1,19 @@
 [
   {
+    "id": "mAKOTR0cNrA",
+    "title": "딥시크 오늘 발표하면 미국증시 위험합니다",
+    "thumbnail": "https://i.ytimg.com/vi/mAKOTR0cNrA/hqdefault.jpg",
+    "publishedAt": "2026-02-17T10:33:30Z",
+    "asset": "미국 증시",
+    "jeon_opinion": -0.8,
+    "jeon_logic": "딥시크 오늘 발표가 미국 증시에 위험을 초래할 것이라고 주장",
+    "oracle_signal": "BUY",
+    "oracle_logic": "딥시크 발표는 시장의 불확실성을 해소하고 투자 심리를 개선하여 미국 증시에 긍정적인 영향을 줄 것이다.",
+    "confidence": 0.7,
+    "physiognomy_score": 50,
+    "timestamp": "00:00 (영상 전체 내용 기반)"
+  },
+  {
     "id": "r9iotOqFnnI",
     "title": "광물 확보 못하면 한국은 위기가 옵니다(ft. 박준혁 작가 1부)",
     "thumbnail": "https://i.ytimg.com/vi/r9iotOqFnnI/hqdefault.jpg",
