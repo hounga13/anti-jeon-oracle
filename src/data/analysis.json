@@ -1,5 +1,19 @@
 [
   {
+    "id": "pl-fqh50iQ0",
+    "title": "현대차는 이제 테슬라입니다. 주가 1000만 원도 가능합니다(ft.손재권 대표 1부)",
+    "thumbnail": "https://i.ytimg.com/vi/pl-fqh50iQ0/hqdefault.jpg",
+    "publishedAt": "2026-02-18T10:51:00Z",
+    "asset": "현대차",
+    "jeon_opinion": 0.8,
+    "jeon_logic": "현대차가 로보틱스 기술 발전으로 테슬라와 경쟁 가능하며, 미래 성장 잠재력이 높아 주가 상승 가능성이 높음",
+    "oracle_signal": "SELL",
+    "oracle_logic": "현대차의 로보틱스 기술은 아직 테슬라에 비해 부족하며, 시장 경쟁 심화로 인해 주가 상승을 담보하기 어려울 수 있다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "K9OjiRNVNjQ",
     "title": "서울 공급 부족, 이제는 여기를 노려야합니다(ft.김학렬 소장 3부)",
     "thumbnail": "https://i.ytimg.com/vi/K9OjiRNVNjQ/hqdefault.jpg",
