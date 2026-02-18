@@ -1,5 +1,19 @@
 [
   {
+    "id": "4wlkkbOb-S4",
+    "title": "중희토류는 중국에서만 납니다. 이것 없으면 4차 산업 위기 옵니다(ft.박준혁 작가 2부)",
+    "thumbnail": "https://i.ytimg.com/vi/4wlkkbOb-S4/hqdefault.jpg",
+    "publishedAt": "2026-02-18T00:28:54Z",
+    "asset": "중희토류",
+    "jeon_opinion": 1.0,
+    "jeon_logic": "중희토류는 중국에서만 나고, 4차 산업에 필수적이므로 중국이 중희토류 수출을 통제하면 4차 산업에 위기가 오고 중국 패권이 강화된다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "중희토류가 4차 산업에 필수적이라 할지라도, 결국 대체재가 개발되거나 새로운 공급망이 구축되어 중국의 희토류 패권은 약화될 것이다.",
+    "confidence": 0.8,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "mAKOTR0cNrA",
     "title": "딥시크 오늘 발표하면 미국증시 위험합니다",
     "thumbnail": "https://i.ytimg.com/vi/mAKOTR0cNrA/hqdefault.jpg",
