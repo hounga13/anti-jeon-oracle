@@ -1,5 +1,19 @@
 [
   {
+    "id": "K9OjiRNVNjQ",
+    "title": "서울 공급 부족, 이제는 여기를 노려야합니다(ft.김학렬 소장 3부)",
+    "thumbnail": "https://i.ytimg.com/vi/K9OjiRNVNjQ/hqdefault.jpg",
+    "publishedAt": "2026-02-18T04:59:21Z",
+    "asset": "서울 부동산 (빌라)",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "서울 아파트 공급 부족으로 인해 상대적으로 저렴한 빌라에 대한 투자 수요가 늘어날 수 있다는 희망적인 전망을 제시하지만, 5년 후 투자 입지를 고려해야 한다고 강조함.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "서울 아파트 공급 부족은 빌라 수요 증가로 이어지지 않으며, 오히려 아파트 쏠림 현상을 심화시켜 빌라 투자의 위험성을 높일 수 있다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "05:13"
+  },
+  {
     "id": "4wlkkbOb-S4",
     "title": "중희토류는 중국에서만 납니다. 이것 없으면 4차 산업 위기 옵니다(ft.박준혁 작가 2부)",
     "thumbnail": "https://i.ytimg.com/vi/4wlkkbOb-S4/hqdefault.jpg",
