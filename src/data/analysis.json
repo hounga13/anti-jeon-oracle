@@ -1,5 +1,19 @@
 [
   {
+    "id": "qjBT9zkZ29c",
+    "title": "이란에게 나쁜 일이 벌어질 것이다, 트럼프 한마디에 급등한 유가",
+    "thumbnail": "https://i.ytimg.com/vi/qjBT9zkZ29c/hqdefault.jpg",
+    "publishedAt": "2026-02-19T22:00:50Z",
+    "asset": "유가",
+    "jeon_opinion": 1.0,
+    "jeon_logic": "트럼프의 발언으로 이란에 나쁜 일이 벌어질 것이고, 이는 유가 상승으로 이어질 것이다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "이란에 예상되는 나쁜 일은 단기적 변동성을 야기할 수 있으나, 결국 산유량 증가와 대체 에너지 개발 가속화로 이어져 유가 하락을 초래할 것이다.",
+    "confidence": 0.7,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "xM7e_rMqneI",
     "title": "커버드콜 ETF, 이때는 조심하세요(ft.임승현 작가 2부)",
     "thumbnail": "https://i.ytimg.com/vi/xM7e_rMqneI/hqdefault.jpg",
