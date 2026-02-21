@@ -1,5 +1,19 @@
 [
   {
+    "id": "LxQZBB57IUM",
+    "title": "한국도 일본 버블처럼 될수있습니다(ft. 호사카 유지 교수 2부)",
+    "thumbnail": "https://i.ytimg.com/vi/LxQZBB57IUM/hqdefault.jpg",
+    "publishedAt": "2026-02-21T03:47:29Z",
+    "asset": "한국 주식 시장 (코스피)",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "일본 버블 붕괴처럼 한국 경제도 침체될 수 있으므로, 한국 주식 시장은 하락할 가능성이 높다.",
+    "oracle_signal": "BUY",
+    "oracle_logic": "일본 버블과는 다른 견조한 경제 펀더멘털을 바탕으로 한국 주식 시장은 장기적으로 성장할 것이다.",
+    "confidence": 0.8,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "DPyqJKEDUQk",
     "title": "엔비디아와 현대차가 손잡으면 테슬라 이길 수 있습니다(ft.손재권 대표 2부)",
     "thumbnail": "https://i.ytimg.com/vi/DPyqJKEDUQk/hqdefault.jpg",
