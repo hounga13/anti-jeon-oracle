@@ -1,5 +1,19 @@
 [
   {
+    "id": "cEg3feqzTFI",
+    "title": "두쫀쿠 안 먹으면 한 달에 2킬로씩 빠집니다! (ft. 홍희연 원장 1부)",
+    "thumbnail": "https://i.ytimg.com/vi/cEg3feqzTFI/hqdefault.jpg",
+    "publishedAt": "2026-02-26T03:00:43Z",
+    "asset": "다이어트 (두쫀쿠 안 먹기)",
+    "jeon_opinion": 0.8,
+    "jeon_logic": "두쫀쿠(두부, 쫀드기, 쿠키)를 끊으면 혈당 스파이크를 막고 살이 빠진다.",
+    "oracle_signal": "BUY",
+    "oracle_logic": "두쫀쿠 섭취는 혈당 안정과 근육 생성에 도움을 주어 오히려 체중 감량에 도움이 될 수 있다.",
+    "confidence": 0.7,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "Td-rRVm_7ms",
     "title": "삼성전자 20만원, SK하이닉스 100만원 돌파한 이유",
     "thumbnail": "https://i.ytimg.com/vi/Td-rRVm_7ms/hqdefault.jpg",
