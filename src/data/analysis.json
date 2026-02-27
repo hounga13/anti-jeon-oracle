@@ -1,5 +1,19 @@
 [
   {
+    "id": "Bx9W5Qw55Lc",
+    "title": "한국 반도체가 이렇게 잘 나가는 이유(AFW파트너스 이선엽 대표 2부)",
+    "thumbnail": "https://i.ytimg.com/vi/Bx9W5Qw55Lc/hqdefault.jpg",
+    "publishedAt": "2026-02-27T05:53:29Z",
+    "asset": "삼성전자",
+    "jeon_opinion": 0.7,
+    "jeon_logic": "코스피 상승에 삼성전자 비중이 크고, 관련 업종에 긍정적인 영향을 줄 수 있으므로 매수 고려.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "삼성전자는 이미 코스피에 과도하게 반영되어 있으며, 상승 여력이 제한적이고 오히려 하락 위험이 높다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:20"
+  },
+  {
     "id": "UBYKrwMXIsg",
     "title": "코스피 6000 돌파 더 오를수 있을까?(ft.AFW파트너스 이선엽 대표 1부)",
     "thumbnail": "https://i.ytimg.com/vi/UBYKrwMXIsg/hqdefault.jpg",
