@@ -1,5 +1,19 @@
 [
   {
+    "id": "UBYKrwMXIsg",
+    "title": "코스피 6000 돌파 더 오를수 있을까?(ft.AFW파트너스 이선엽 대표 1부)",
+    "thumbnail": "https://i.ytimg.com/vi/UBYKrwMXIsg/hqdefault.jpg",
+    "publishedAt": "2026-02-27T00:51:21Z",
+    "asset": "코스피",
+    "jeon_opinion": 0.7,
+    "jeon_logic": "반도체 섹터의 강세와 외국인 자금 유입 가능성, 그리고 긍정적인 시장 분위기를 근거로 코스피 6000 돌파 가능성을 제시하고 있다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "반도체 섹터에 대한 과도한 의존, 외국인 자금의 변동성, 그리고 시장의 지나친 낙관론은 코스피 폭락의 전조일 뿐이다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:47"
+  },
+  {
     "id": "cEg3feqzTFI",
     "title": "두쫀쿠 안 먹으면 한 달에 2킬로씩 빠집니다! (ft. 홍희연 원장 1부)",
     "thumbnail": "https://i.ytimg.com/vi/cEg3feqzTFI/hqdefault.jpg",
