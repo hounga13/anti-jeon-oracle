@@ -1,5 +1,19 @@
 [
   {
+    "id": "ZWLMnvcPcgo",
+    "title": "삼성전자 -10%, 공포 말고 투자자는 2가지만 생각하세요(ft.코스피-7%)",
+    "thumbnail": "https://i.ytimg.com/vi/ZWLMnvcPcgo/hqdefault.jpg",
+    "publishedAt": "2026-03-03T08:33:19Z",
+    "asset": "삼성전자",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "삼성전자 주가 하락에 공포를 느낄 필요 없이 투자 기회로 삼아야 한다고 주장하며, 코스피 하락에도 투자할 부분을 찾아야 한다고 한다. 결국, 하락은 매수 기회라는 뉘앙스다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "삼성전자 주가 하락은 심각한 위험 신호이며, 코스피 하락과 맞물려 추가적인 폭락 가능성을 경고한다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00 (추정 - 영상에 명시적인 언급 없음)"
+  },
+  {
     "id": "t_M9k9IvBJw",
     "title": "내일 삼성전자, SK하이닉스 팔아야할까?",
     "thumbnail": "https://i.ytimg.com/vi/t_M9k9IvBJw/hqdefault.jpg",
