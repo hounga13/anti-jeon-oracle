@@ -1,5 +1,19 @@
 [
   {
+    "id": "8b_HulobJuI",
+    "title": "코스피만 크게 하락한 이유, 이제 못 참겠습니다",
+    "thumbnail": "https://i.ytimg.com/vi/8b_HulobJuI/hqdefault.jpg",
+    "publishedAt": "2026-03-04T12:00:11Z",
+    "asset": "코스피",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "코스피가 크게 하락한 이유가 있다고 주장하며, 하락에 대한 우려를 표명.",
+    "oracle_signal": "BUY",
+    "oracle_logic": "코스피 하락에 대한 우려를 역이용하여, 지금이 저가 매수의 기회일 수 있다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "ZWLMnvcPcgo",
     "title": "삼성전자 -10%, 공포 말고 투자자는 2가지만 생각하세요(ft.코스피-7%)",
     "thumbnail": "https://i.ytimg.com/vi/ZWLMnvcPcgo/hqdefault.jpg",
