@@ -1,5 +1,19 @@
 [
   {
+    "id": "HSayIiA1E5M",
+    "title": "3월에는 어떤 미국 주식을 사야 할까?",
+    "thumbnail": "https://i.ytimg.com/vi/HSayIiA1E5M/hqdefault.jpg",
+    "publishedAt": "2026-03-05T07:33:11Z",
+    "asset": "미국 주식",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "3월에 특정 미국 주식을 추천하지만, 면책 조항에서 투자 손실 가능성을 언급하고 Seeking Alpha 제휴 링크를 제공하는 것을 보아, 투자를 부추기지만 책임은 회피하려는 의도가 엿보인다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "지금은 미국 주식 투자를 자제하고 현금 보유량을 늘려 위기에 대비하는 것이 현명하다.",
+    "confidence": 0.8,
+    "physiognomy_score": 50,
+    "timestamp": "00:00 (영상 전체)"
+  },
+  {
     "id": "8b_HulobJuI",
     "title": "코스피만 크게 하락한 이유, 이제 못 참겠습니다",
     "thumbnail": "https://i.ytimg.com/vi/8b_HulobJuI/hqdefault.jpg",
