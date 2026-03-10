@@ -1,5 +1,19 @@
 [
   {
+    "id": "FOXEZRh-p8Q",
+    "title": "앞으로 한국주식 계속오릅니다. 흔들리지 마세요(ft.존리 대표1부)",
+    "thumbnail": "https://i.ytimg.com/vi/FOXEZRh-p8Q/hqdefault.jpg",
+    "publishedAt": "2026-03-10T09:51:46Z",
+    "asset": "한국 주식",
+    "jeon_opinion": 0.8,
+    "jeon_logic": "앞으로 한국 주식은 계속 오를 것이므로 흔들리지 말고 투자해야 한다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "지금이 고점일 가능성이 높으니, 하락에 대비하여 현금 비중을 늘려야 한다.",
+    "confidence": 0.7,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "_9BcgqsIttA",
     "title": "조선주, 삼성전자에 대한 생각(ft.양양스승님 4부)",
     "thumbnail": "https://i.ytimg.com/vi/_9BcgqsIttA/hqdefault.jpg",
