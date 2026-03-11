@@ -1,5 +1,19 @@
 [
   {
+    "id": "rkpRs7LOZKY",
+    "title": "외국인들 시선은 차갑습니다. 한국증시 골든타임 5년 남았습니다(ft.존리 대표 2부)",
+    "thumbnail": "https://i.ytimg.com/vi/rkpRs7LOZKY/hqdefault.jpg",
+    "publishedAt": "2026-03-11T01:22:58Z",
+    "asset": "한국증시",
+    "jeon_opinion": -0.8,
+    "jeon_logic": "외국인 투자자들의 시선이 차갑고, 한국 증시의 골든타임이 5년밖에 남지 않았다고 주장하며 투자 매력도가 떨어진다고 암시",
+    "oracle_signal": "BUY",
+    "oracle_logic": "외국인의 외면은 역발상 투자의 기회이며, 5년이라는 시간은 충분히 성장 가능성이 있는 기간이다.",
+    "confidence": 0.7,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "FOXEZRh-p8Q",
     "title": "앞으로 한국주식 계속오릅니다. 흔들리지 마세요(ft.존리 대표1부)",
     "thumbnail": "https://i.ytimg.com/vi/FOXEZRh-p8Q/hqdefault.jpg",
