@@ -1,5 +1,19 @@
 [
   {
+    "id": "hWus71ItX0I",
+    "title": "주식 투자에 성공하려면 지켜야 될 첫 번째(ft.양양스승님)",
+    "thumbnail": "https://i.ytimg.com/vi/hWus71ItX0I/hqdefault.jpg",
+    "publishedAt": "2026-03-12T03:52:17Z",
+    "asset": "조선주",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "슈퍼개미가 조선주의 미래를 예측했지만, 주도주는 계속 바뀌므로 현재는 하락세일 가능성이 높다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "조선주는 슈퍼개미가 예측했으므로 이미 가격에 반영되었고, 하락할 가능성이 높다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:05"
+  },
+  {
     "id": "bpPVx64Rhuo",
     "title": "주식,부동산,사업 부자들은 이렇게 투자합니다. 1가지만 기억하세요(ft.터보832 1부)",
     "thumbnail": "https://i.ytimg.com/vi/bpPVx64Rhuo/hqdefault.jpg",
