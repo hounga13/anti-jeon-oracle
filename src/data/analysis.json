@@ -1,5 +1,19 @@
 [
   {
+    "id": "KIgYzQ-d_ok",
+    "title": "전설의 반도체 애널리스트가 코스피 7000, 삼성전자 25만원을 보는 이유(ft.소현철 교수 2부)",
+    "thumbnail": "https://i.ytimg.com/vi/KIgYzQ-d_ok/hqdefault.jpg",
+    "publishedAt": "2026-03-16T00:21:43Z",
+    "asset": "삼성전자",
+    "jeon_opinion": 0.8,
+    "jeon_logic": "전설적인 반도체 애널리스트 소현철 교수의 의견을 인용하여 삼성전자 주가가 전고점을 돌파하고 25만원까지 상승할 가능성을 제시.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "삼성전자는 이미 과도하게 고평가되었으며, 반도체 시장의 침체와 경쟁 심화로 인해 25만원은커녕 현재 주가 유지도 어려울 것이다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:22"
+  },
+  {
     "id": "QQsbSe9snks",
     "title": "이란전쟁 한 달만 버티면, 증시에 봄이 옵니다(ft.소현철 교수 1부)",
     "thumbnail": "https://i.ytimg.com/vi/QQsbSe9snks/hqdefault.jpg",
