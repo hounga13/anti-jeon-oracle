@@ -1,5 +1,19 @@
 [
   {
+    "id": "AKG38NKdU3M",
+    "title": "코스피 1만 성패는 러시아에 달려있습니다(ft.소현철 교수 3부)",
+    "thumbnail": "https://i.ytimg.com/vi/AKG38NKdU3M/hqdefault.jpg",
+    "publishedAt": "2026-03-17T06:09:49Z",
+    "asset": "코스피",
+    "jeon_opinion": -0.8,
+    "jeon_logic": "러시아-우크라이나 전쟁의 불확실성으로 인해 코스피 1만 달성은 어려울 수 있으며, 러시아 상황에 따라 변동성이 커질 것이다.",
+    "oracle_signal": "BUY",
+    "oracle_logic": "러시아 문제가 해결되면 오히려 코스피는 억눌렸던 상승 잠재력을 폭발시킬 것이다.",
+    "confidence": 0.7,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "KIgYzQ-d_ok",
     "title": "전설의 반도체 애널리스트가 코스피 7000, 삼성전자 25만원을 보는 이유(ft.소현철 교수 2부)",
     "thumbnail": "https://i.ytimg.com/vi/KIgYzQ-d_ok/hqdefault.jpg",
