@@ -1,5 +1,19 @@
 [
   {
+    "id": "aLN8iw48nXk",
+    "title": "앞으로 증시변동성은 더 커집니다. 이제 이렇게 대응하세요(ft. 황용국 대표)",
+    "thumbnail": "https://i.ytimg.com/vi/aLN8iw48nXk/hqdefault.jpg",
+    "publishedAt": "2026-03-18T10:00:01Z",
+    "asset": "한국 및 미국 증시 (전반)",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "증시 변동성이 커지므로, 하이버프 AI와 같은 AI 투자 솔루션을 활용하여 리스크를 관리해야 한다.",
+    "oracle_signal": "BUY",
+    "oracle_logic": "변동성이 커진다는 것은 곧 기회가 많다는 의미이며, 적극적인 매수를 통해 수익을 극대화해야 한다.",
+    "confidence": 0.8,
+    "physiognomy_score": 50,
+    "timestamp": "00:00 (영상 전체)"
+  },
+  {
     "id": "qfe4Js2Z7Zs",
     "title": "금, 은, 원유, 비트코인 이때 사야 돈 법니다(ft.강환국 작가 2부)",
     "thumbnail": "https://i.ytimg.com/vi/qfe4Js2Z7Zs/hqdefault.jpg",
