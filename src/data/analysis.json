@@ -1,5 +1,19 @@
 [
   {
+    "id": "nzKoI-pyVXk",
+    "title": "사업자대출로 집 산 사람 전수조사, 이제 집 파셔야 합니다(ft.한문도 교수 1부)",
+    "thumbnail": "https://i.ytimg.com/vi/nzKoI-pyVXk/hqdefault.jpg",
+    "publishedAt": "2026-03-20T09:18:23Z",
+    "asset": "부동산",
+    "jeon_opinion": -0.8,
+    "jeon_logic": "사업자 대출로 집 산 사람 전수조사 예정이며, 금리 인상으로 인해 부동산 가격 하락이 예상되므로 집을 팔아야 한다.",
+    "oracle_signal": "BUY",
+    "oracle_logic": "정부의 규제 완화와 금리 인하 가능성이 있어 사업자 대출을 활용한 부동산 매수는 여전히 유효하며, 장기적으로 집값은 상승할 것이다.",
+    "confidence": 0.7,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "m5G87wKaCIo",
     "title": "가난을 극복하고 나서 깨달은 한 가지(ft.김종율 작가 1부)",
     "thumbnail": "https://i.ytimg.com/vi/m5G87wKaCIo/hqdefault.jpg",
