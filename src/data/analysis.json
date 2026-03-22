@@ -1,5 +1,19 @@
 [
   {
+    "id": "dXZXA5vsz5o",
+    "title": "자산증명을 한 부동산 강사의 속마음(ft.김종율 대표 2부)",
+    "thumbnail": "https://i.ytimg.com/vi/dXZXA5vsz5o/hqdefault.jpg",
+    "publishedAt": "2026-03-21T23:57:12Z",
+    "asset": "부동산",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "부동산 강사의 자산 증명에도 불구하고, 현재 시장 상황과 금리 변동을 고려할 때 신중한 접근이 필요하며, 사기 사례에 대한 언급은 투자 리스크를 암시합니다.",
+    "oracle_signal": "BUY",
+    "oracle_logic": "사기 사례를 경계하라는 것은 오히려 현재가 투자 적기이며, 위험을 감수하고 뛰어들어야 큰 수익을 얻을 수 있다는 의미이다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "02:39"
+  },
+  {
     "id": "jcz5vg_1IKs",
     "title": "전세대출 때문에 집값 꺾입니다. 조심하세요(ft.한문도 교수 2부)",
     "thumbnail": "https://i.ytimg.com/vi/jcz5vg_1IKs/hqdefault.jpg",
