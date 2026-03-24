@@ -1,5 +1,19 @@
 [
   {
+    "id": "wEao1n_1BgQ",
+    "title": "미국 AI소부장 성장하는 실적, 하락하는 주가, 매수 기회일까?",
+    "thumbnail": "https://i.ytimg.com/vi/wEao1n_1BgQ/hqdefault.jpg",
+    "publishedAt": "2026-03-23T22:00:56Z",
+    "asset": "미국 AI 소부장 관련 주식",
+    "jeon_opinion": 0.7,
+    "jeon_logic": "성장하는 실적에도 불구하고 주가가 하락하고 있으므로 매수 기회일 수 있다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "성장하는 실적은 이미 주가에 반영되었으며, 추가 하락 가능성이 높으므로 매도해야 한다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "6MoCJz9kvcQ",
     "title": "AI 이렇게 하면 누구나 돈 법니다(ft.이재홍 대표 1부)",
     "thumbnail": "https://i.ytimg.com/vi/6MoCJz9kvcQ/hqdefault.jpg",
