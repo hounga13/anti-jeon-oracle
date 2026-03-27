@@ -1,5 +1,19 @@
 [
   {
+    "id": "O4FarHNQkgg",
+    "title": "무조건 실물금 사세요(ft.배재한 대표 2부)",
+    "thumbnail": "https://i.ytimg.com/vi/O4FarHNQkgg/hqdefault.jpg",
+    "publishedAt": "2026-03-27T11:41:59Z",
+    "asset": "실물 금",
+    "jeon_opinion": 1.0,
+    "jeon_logic": "화폐 가치 하락 및 금리 인상 불확실성, 이란 전쟁 등 지정학적 리스크로 인해 금값 상승 가능성이 매우 높으므로 무조건 실물금을 사라.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "지정학적 리스크 완화 및 금리 인상 가능성 확대로 인해 금 투자 매력이 급감할 수 있으므로 지금이라도 팔아라.",
+    "confidence": 0.9,
+    "physiognomy_score": 50,
+    "timestamp": "00:25"
+  },
+  {
     "id": "16cUZJBm87M",
     "title": "메모리 1/6만 필요한 구글 터보퀀트 충격과 미국, 이란 지상전 임박",
     "thumbnail": "https://i.ytimg.com/vi/16cUZJBm87M/hqdefault.jpg",
