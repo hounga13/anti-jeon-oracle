@@ -1,5 +1,19 @@
 [
   {
+    "id": "Ts7dyySXe9g",
+    "title": "외국인이 코스피에서 도망치고 있는 이유(ft,삼성전자)",
+    "thumbnail": "https://i.ytimg.com/vi/Ts7dyySXe9g/hqdefault.jpg",
+    "publishedAt": "2026-03-28T12:20:19Z",
+    "asset": "코스피",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "외국인이 코스피에서 도망치고 있으므로 하락",
+    "oracle_signal": "BUY",
+    "oracle_logic": "외국인 투자자들의 이탈은 오히려 코스피 시장에 저가 매수의 기회를 제공할 수 있다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "Ox5GX4j2cb8",
     "title": "전 삼성전자 부사장의 경고, 한국 반도체 곧 위기가 올 수 있습니다(ft.이병철 교수 1부)",
     "thumbnail": "https://i.ytimg.com/vi/Ox5GX4j2cb8/hqdefault.jpg",
