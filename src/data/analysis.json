@@ -1,5 +1,19 @@
 [
   {
+    "id": "Yj-nTZttylQ",
+    "title": "이러다가 중국에 반도체 따라잡힙니다(ft.이병철 교수 2부)",
+    "thumbnail": "https://i.ytimg.com/vi/Yj-nTZttylQ/hqdefault.jpg",
+    "publishedAt": "2026-03-29T00:08:45Z",
+    "asset": "반도체 (한국)",
+    "jeon_opinion": -0.8,
+    "jeon_logic": "중국의 반도체 기술 발전으로 한국 반도체 산업이 위협받고 있으며, 이를 극복하기 위한 전략이 필요하다.",
+    "oracle_signal": "BUY",
+    "oracle_logic": "중국의 반도체 굴기는 단기적인 위협일 뿐, 한국 반도체 산업은 기술적 우위를 바탕으로 장기적인 성장세를 유지할 것이다.",
+    "confidence": 0.7,
+    "physiognomy_score": 50,
+    "timestamp": "00:35"
+  },
+  {
     "id": "Ts7dyySXe9g",
     "title": "외국인이 코스피에서 도망치고 있는 이유(ft,삼성전자)",
     "thumbnail": "https://i.ytimg.com/vi/Ts7dyySXe9g/hqdefault.jpg",
