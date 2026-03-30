@@ -1,5 +1,19 @@
 [
   {
+    "id": "pVvd-xlUfOA",
+    "title": "AI 마케팅이 시장을 삼키고 있습니다(ft.이재홍 대표 2부)",
+    "thumbnail": "https://i.ytimg.com/vi/pVvd-xlUfOA/hqdefault.jpg",
+    "publishedAt": "2026-03-30T07:16:18Z",
+    "asset": "AI 관련 주식",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "AI 마케팅이 시장을 삼키고 AI로 성장하는 기업이 나올 것이라는 주장은, 경쟁 심화와 거품 붕괴 가능성을 간과한 섣부른 낙관론이다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "AI 경쟁 과열로 인한 수익성 악화 및 투자 회수 실패 가능성이 높으므로, AI 관련 주식은 매도하는 것이 현명하다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:23"
+  },
+  {
     "id": "xhs85KoSIwo",
     "title": "지상전에 1.7만명을 투입하는 미국, 숨은 의도 찾기",
     "thumbnail": "https://i.ytimg.com/vi/xhs85KoSIwo/hqdefault.jpg",
