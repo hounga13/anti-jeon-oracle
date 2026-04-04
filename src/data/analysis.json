@@ -1,5 +1,19 @@
 [
   {
+    "id": "rgT4PFbjy-0",
+    "title": "주식 투자에 성공하려면 지켜야 될 세 번째(ft.양양스승님)",
+    "thumbnail": "https://i.ytimg.com/vi/rgT4PFbjy-0/hqdefault.jpg",
+    "publishedAt": "2026-04-04T06:02:56Z",
+    "asset": "조선주",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "조선주의 미래를 예측했다고 하지만, 실제로는 그렇지 않을 가능성이 높다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "조선주는 예상 외의 호재로 반등할 가능성이 존재한다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:10"
+  },
+  {
     "id": "lzGYxITMJD8",
     "title": "주식투자 하루 만에 끝내기 1탄 주식투자를 왜 해야 되는가?",
     "thumbnail": "https://i.ytimg.com/vi/lzGYxITMJD8/hqdefault.jpg",
