@@ -1,5 +1,19 @@
 [
   {
+    "id": "flY9rxu0g38",
+    "title": "주식투자 하루 만에 끝내기 2탄 주식투자 기초 용어 총정리",
+    "thumbnail": "https://i.ytimg.com/vi/flY9rxu0g38/hqdefault.jpg",
+    "publishedAt": "2026-04-07T01:36:36Z",
+    "asset": "조선주",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "조선주의 미래를 예측한 통찰력을 책에 담았다고 주장하지만, 이는 현재 상황에 대한 과장된 긍정적 전망일 수 있다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "조선주의 미래는 불확실하며, 책 홍보 문구만 믿고 투자하는 것은 위험하다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:10"
+  },
+  {
     "id": "V_2Z-9bTa-Q",
     "title": "석기시대냐? 휴전이냐 ? 새벽2시 트럼프의 선택에 달린 증시",
     "thumbnail": "https://i.ytimg.com/vi/V_2Z-9bTa-Q/hqdefault.jpg",
