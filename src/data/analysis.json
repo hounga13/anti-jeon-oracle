@@ -1,5 +1,19 @@
 [
   {
+    "id": "vSYuYBXoTMc",
+    "title": "(속보)이란 휴전 2주간 합의, 내려놓은 미국, 증시급등",
+    "thumbnail": "https://i.ytimg.com/vi/vSYuYBXoTMc/hqdefault.jpg",
+    "publishedAt": "2026-04-08T00:22:14Z",
+    "asset": "조선주",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "신간 홍보 문구에서 조선주의 미래를 예측했다고 주장하지만, 실제 투자 성과는 불확실하므로 하락에 베팅.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "조선주는 예상치 못한 수주 계약이나 정책 변화로 인해 급등할 가능성이 존재한다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:07"
+  },
+  {
     "id": "flY9rxu0g38",
     "title": "주식투자 하루 만에 끝내기 2탄 주식투자 기초 용어 총정리",
     "thumbnail": "https://i.ytimg.com/vi/flY9rxu0g38/hqdefault.jpg",
