@@ -1,5 +1,19 @@
 [
   {
+    "id": "ZxFx_ohTyqg",
+    "title": "삼성전자 어닝서프라이즈 이후에 대한 생각(ft.염승환 이사 1부)",
+    "thumbnail": "https://i.ytimg.com/vi/ZxFx_ohTyqg/hqdefault.jpg",
+    "publishedAt": "2026-04-08T23:48:40Z",
+    "asset": "삼성전자",
+    "jeon_opinion": 0.7,
+    "jeon_logic": "1분기 어닝 서프라이즈와 추정치 상향으로 삼성전자 주가 상승 가능성이 있지만, 실적 피크 시점과 반도체 수요 지속 여부가 불확실하므로 신중한 투자 필요.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "어닝 서프라이즈는 일시적인 현상일 뿐이며, 실적 피크 시점 이후에는 반도체 수요 감소로 삼성전자 주가는 폭락할 것이다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "01:04"
+  },
+  {
     "id": "vSYuYBXoTMc",
     "title": "(속보)이란 휴전 2주간 합의, 내려놓은 미국, 증시급등",
     "thumbnail": "https://i.ytimg.com/vi/vSYuYBXoTMc/hqdefault.jpg",
