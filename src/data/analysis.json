@@ -1,5 +1,19 @@
 [
   {
+    "id": "Lfu0Q3TTAvg",
+    "title": "메모리 반도체 주식 아직도 싼 이유 (ft. 박준영 대표 2부)",
+    "thumbnail": "https://i.ytimg.com/vi/Lfu0Q3TTAvg/hqdefault.jpg",
+    "publishedAt": "2026-04-13T09:02:07Z",
+    "asset": "삼성전자",
+    "jeon_opinion": 0.7,
+    "jeon_logic": "메모리 반도체 시장의 성장 가능성, 특히 HBM(고대역폭 메모리) 시장에서의 경쟁력 유지 전망.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "삼성전자는 HBM 시장에서 경쟁력을 잃고, 예상보다 빠르게 기술적 한계에 직면할 것이다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:23"
+  },
+  {
     "id": "cCSXBEJdPIY",
     "title": "트럼프가 호르무즈해협 역봉쇄를 하는 이유 (ft. 그림자선단)",
     "thumbnail": "https://i.ytimg.com/vi/cCSXBEJdPIY/hqdefault.jpg",
