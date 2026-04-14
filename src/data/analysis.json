@@ -1,5 +1,19 @@
 [
   {
+    "id": "BRDCMtV_kw4",
+    "title": "노후 준비하려면 이 배당주에 투자하세요 (ft. 이상규 작가 2부)",
+    "thumbnail": "https://i.ytimg.com/vi/BRDCMtV_kw4/hqdefault.jpg",
+    "publishedAt": "2026-04-14T06:17:06Z",
+    "asset": "배당주 (일반)",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "노후 준비를 위해 배당주 투자를 추천하지만, 영상에서 언급된 배당성향과 성장률을 고려하면 안정적인 노후 자금 마련에 부적합할 가능성이 높습니다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "배당주의 변동성과 미래 배당 감소 가능성을 고려할 때, 노후 자금은 보다 안전하고 예측 가능한 자산에 투자해야 합니다.",
+    "confidence": 0.8,
+    "physiognomy_score": 50,
+    "timestamp": "00:39"
+  },
+  {
     "id": "Lfu0Q3TTAvg",
     "title": "메모리 반도체 주식 아직도 싼 이유 (ft. 박준영 대표 2부)",
     "thumbnail": "https://i.ytimg.com/vi/Lfu0Q3TTAvg/hqdefault.jpg",
