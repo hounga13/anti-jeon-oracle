@@ -1,5 +1,19 @@
 [
   {
+    "id": "uoYwD5ySoXc",
+    "title": "지금 스페이스X 사러 미국 갑니다",
+    "thumbnail": "https://i.ytimg.com/vi/uoYwD5ySoXc/hqdefault.jpg",
+    "publishedAt": "2026-04-18T11:18:16Z",
+    "asset": "스페이스X (비상장주식)",
+    "jeon_opinion": 1.0,
+    "jeon_logic": "미래 성장 가능성이 매우 높고, 우주 산업을 선도할 기업이므로 무조건 사야 한다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "높은 미래 기대감은 이미 가격에 선반영되어 있으며, 비상장 주식의 유동성 리스크와 기업 가치 평가의 불확실성을 고려하면 지금은 매도해야 한다.",
+    "confidence": 0.8,
+    "physiognomy_score": 50,
+    "timestamp": "영상 전체"
+  },
+  {
     "id": "51zWI7H-098",
     "title": "미국과 이란이 휴전할 수밖에 없는 이유(ft.조한범 박사)",
     "thumbnail": "https://i.ytimg.com/vi/51zWI7H-098/hqdefault.jpg",
