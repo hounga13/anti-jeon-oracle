@@ -1,5 +1,19 @@
 [
   {
+    "id": "LigzJv7JsP0",
+    "title": "테슬라 잠시만 안녕 (ft. 실적 주가)",
+    "thumbnail": "https://i.ytimg.com/vi/LigzJv7JsP0/hqdefault.jpg",
+    "publishedAt": "2026-04-22T22:57:44Z",
+    "asset": "테슬라",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "영상 제목에서 '잠시만 안녕'이라고 언급하며 실적을 고려할 때 하락 가능성을 시사함.",
+    "oracle_signal": "BUY",
+    "oracle_logic": "테슬라는 잠시 주춤할 수 있지만, 미래 성장 동력을 고려할 때 지금이 매수 기회다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "FE_lxrJV89s",
     "title": "코스피 또 신고가 돌파의 4가지 진실",
     "thumbnail": "https://i.ytimg.com/vi/FE_lxrJV89s/hqdefault.jpg",
