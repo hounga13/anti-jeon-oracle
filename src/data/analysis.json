@@ -1,5 +1,19 @@
 [
   {
+    "id": "ppwqlJJeGJA",
+    "title": "테슬라 전직원 만나고 희망을 얻었습니다(ft.drive tech odyssey)",
+    "thumbnail": "https://i.ytimg.com/vi/ppwqlJJeGJA/hqdefault.jpg",
+    "publishedAt": "2026-04-23T22:43:53Z",
+    "asset": "테슬라",
+    "jeon_opinion": 0.8,
+    "jeon_logic": "테슬라 전직원과의 만남을 통해 테슬라의 미래에 대한 희망을 얻었다는 긍정적 전망",
+    "oracle_signal": "SELL",
+    "oracle_logic": "테슬라 전직원과의 만남에서 희망을 얻었다면, 현재 상황은 위태롭고 미래는 불투명하다는 의미이다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00 (영상 전체 맥락)"
+  },
+  {
     "id": "LigzJv7JsP0",
     "title": "테슬라 잠시만 안녕 (ft. 실적 주가)",
     "thumbnail": "https://i.ytimg.com/vi/LigzJv7JsP0/hqdefault.jpg",
