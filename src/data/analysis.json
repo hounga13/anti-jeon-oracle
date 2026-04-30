@@ -1,5 +1,19 @@
 [
   {
+    "id": "K5pQAO6eluA",
+    "title": "수개월 이상 유가 100달러 넘기면 안 되는 이유",
+    "thumbnail": "https://i.ytimg.com/vi/K5pQAO6eluA/hqdefault.jpg",
+    "publishedAt": "2026-04-30T10:12:39Z",
+    "asset": "유가",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "유가가 100달러를 넘으면 경제에 악영향을 미치므로 넘지 않아야 한다.",
+    "oracle_signal": "BUY",
+    "oracle_logic": "경제가 어려워지더라도 유가는 100달러를 넘어 상승할 가능성이 높다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00 (영상 전체 맥락 기반)"
+  },
+  {
     "id": "62Wcke1QVqI",
     "title": "미국주식 향방을 가를 내일 빅테크 실적발표 예상",
     "thumbnail": "https://i.ytimg.com/vi/62Wcke1QVqI/hqdefault.jpg",
