@@ -1,5 +1,19 @@
 [
   {
+    "id": "B3u_bRpahVk",
+    "title": "세계증시가 사상최고치를 찍는 이유(ft.쿼터전시경제)",
+    "thumbnail": "https://i.ytimg.com/vi/B3u_bRpahVk/hqdefault.jpg",
+    "publishedAt": "2026-05-04T02:07:54Z",
+    "asset": "세계 증시 (글로벌 증시, 한국 증시)",
+    "jeon_opinion": 1.0,
+    "jeon_logic": "세계 증시가 사상 최고치를 찍는 이유가 쿼터 전시 경제에 기인한다고 주장하며 상승을 예측.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "쿼터 전시 경제의 허울 아래 감춰진 거품이 꺼지며 세계 증시는 폭락할 것이다.",
+    "confidence": 0.7,
+    "physiognomy_score": 50,
+    "timestamp": "00:00 (영상 전체 내용 기반)"
+  },
+  {
     "id": "OR6SP6GGBnY",
     "title": "주식 투자 하루만에 끝내기 8탄 주식 투자할 때 중요한 핵심 3가지",
     "thumbnail": "https://i.ytimg.com/vi/OR6SP6GGBnY/hqdefault.jpg",
