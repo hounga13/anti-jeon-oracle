@@ -1,5 +1,19 @@
 [
   {
+    "id": "8dtpTYd6de0",
+    "title": "실리콘밸리에 투자하기로 했습니다(ft.Klaus Wehage)",
+    "thumbnail": "https://i.ytimg.com/vi/8dtpTYd6de0/hqdefault.jpg",
+    "publishedAt": "2026-05-08T09:46:55Z",
+    "asset": "테슬라",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "실리콘밸리 투자 영상에서 테슬라가 언급되었지만, 매수 추천이나 긍정적 전망을 내놓지 않았으므로, 성장 가능성은 낮다고 판단.",
+    "oracle_signal": "BUY",
+    "oracle_logic": "테슬라 언급 회피는 곧 숨겨진 기회가 있음을 암시하며, 지금이 매수 적기이다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00 (영상 전반적인 분위기)"
+  },
+  {
     "id": "63ZRAiS3s4A",
     "title": "삼성전자, SK하이닉스 PER이 아직 4배인 이유",
     "thumbnail": "https://i.ytimg.com/vi/63ZRAiS3s4A/hqdefault.jpg",
