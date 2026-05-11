@@ -1,5 +1,19 @@
 [
   {
+    "id": "KjtPYBbxKaE",
+    "title": "코스피 미쳤다",
+    "thumbnail": "https://i.ytimg.com/vi/KjtPYBbxKaE/hqdefault.jpg",
+    "publishedAt": "2026-05-11T01:46:11Z",
+    "asset": "코스피",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "코스피가 미쳤다고 표현하며 하락을 암시하지만, 실제로는 2026년 주식 투자반 홍보 및 경제 전망, 포트폴리오 제공을 통해 구독을 유도하고 있다.",
+    "oracle_signal": "BUY",
+    "oracle_logic": "코스피가 미쳤다는 표현은 공포 심리를 자극하여 구독자를 모으려는 전략일 뿐이며, 실제로는 상승 가능성이 존재한다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "xWedAldNX_M",
     "title": "해저케이블이 무기화 되면 벌어질 일(ft.중국, 미국)",
     "thumbnail": "https://i.ytimg.com/vi/xWedAldNX_M/hqdefault.jpg",
