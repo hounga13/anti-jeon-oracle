@@ -1,5 +1,19 @@
 [
   {
+    "id": "zPQx35YWJ38",
+    "title": "외국인은 왜 자꾸 코스피를 파는 걸까? (ft.금리인상, CPI)",
+    "thumbnail": "https://i.ytimg.com/vi/zPQx35YWJ38/hqdefault.jpg",
+    "publishedAt": "2026-05-12T06:44:33Z",
+    "asset": "코스피",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "외국인 매도세 지속, 금리인상 및 CPI 압박으로 코스피 하락 전망",
+    "oracle_signal": "BUY",
+    "oracle_logic": "외국인 매도세는 일시적이며, 금리 인상 둔화 및 CPI 안정화 시 코스피 반등 가능성이 높다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "2PhBR8xZMpM",
     "title": "카지노주 지금이 진짜 바닥입니다 (ft.임수진 선임연구원 3부)",
     "thumbnail": "https://i.ytimg.com/vi/2PhBR8xZMpM/hqdefault.jpg",
