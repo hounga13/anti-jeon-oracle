@@ -1,5 +1,19 @@
 [
   {
+    "id": "YzjJlnJE9eQ",
+    "title": "이제 증시 방향이 갈리는 이유. 미중 정상회담의 함정(ft.이벌찬 기자 1부)",
+    "thumbnail": "https://i.ytimg.com/vi/YzjJlnJE9eQ/hqdefault.jpg",
+    "publishedAt": "2026-05-13T09:30:24Z",
+    "asset": "미국 증시 (나스닥)",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "미중 정상회담의 함정으로 인해 미국 증시의 하락 가능성이 높다.",
+    "oracle_signal": "BUY",
+    "oracle_logic": "미중 관계 악화에 대한 우려는 이미 시장에 반영되었고, 오히려 회담을 통해 예상치 못한 긍정적 시그널이 나올 수 있다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "VltkxSfqY2A",
     "title": "다음 AI 트렌드는  엣지 컴퓨팅입니다(ft.Angelo Del Priore)",
     "thumbnail": "https://i.ytimg.com/vi/VltkxSfqY2A/hqdefault.jpg",
