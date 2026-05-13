@@ -1,5 +1,19 @@
 [
   {
+    "id": "VltkxSfqY2A",
+    "title": "다음 AI 트렌드는  엣지 컴퓨팅입니다(ft.Angelo Del Priore)",
+    "thumbnail": "https://i.ytimg.com/vi/VltkxSfqY2A/hqdefault.jpg",
+    "publishedAt": "2026-05-13T02:34:59Z",
+    "asset": "엣지 컴퓨팅 관련 기업 주식",
+    "jeon_opinion": -0.8,
+    "jeon_logic": "다음 AI 트렌드는 엣지 컴퓨팅이며 관련 기업에 투자해야 한다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "AI 트렌드가 엣지 컴퓨팅이라는 주장은 이미 가격에 반영되어 있으며, 실제 수익성은 불확실하므로 매도해야 한다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "1yzz-t4BEc4",
     "title": "시총500조를 날린 AI국민배당금 이야기",
     "thumbnail": "https://i.ytimg.com/vi/1yzz-t4BEc4/hqdefault.jpg",
