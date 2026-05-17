@@ -1,5 +1,19 @@
 [
   {
+    "id": "mJ20VSBfRQA",
+    "title": "긴급조정권 발언까지.. 가불기 걸린 삼성전자의 피해액 계산",
+    "thumbnail": "https://i.ytimg.com/vi/mJ20VSBfRQA/hqdefault.jpg",
+    "publishedAt": "2026-05-17T08:16:03Z",
+    "asset": "삼성전자",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "긴급조정권 발동 가능성으로 인해 삼성전자의 피해액이 발생할 수 있다고 주장함. 즉, 하락 가능성에 무게를 둠.",
+    "oracle_signal": "BUY",
+    "oracle_logic": "정부의 긴급조정권 발동은 오히려 삼성전자의 문제점을 해결하고 경쟁력을 강화하는 계기가 될 수 있다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "0AMfI78L49E",
     "title": "로봇으로 중국 이기기 힘든 진짜 이유(ft.이벌찬 기자 2부)",
     "thumbnail": "https://i.ytimg.com/vi/0AMfI78L49E/hqdefault.jpg",
