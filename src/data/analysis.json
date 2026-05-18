@@ -1,5 +1,19 @@
 [
   {
+    "id": "yYAPVUpWs0k",
+    "title": "규제만 풀리면 제2의 렉라자 쏟아집니다 (ft. 조병철 교수, 권해순 연구원 2부)",
+    "thumbnail": "https://i.ytimg.com/vi/yYAPVUpWs0k/hqdefault.jpg",
+    "publishedAt": "2026-05-18T00:48:18Z",
+    "asset": "K-바이오 (제2의 렉라자)",
+    "jeon_opinion": -0.8,
+    "jeon_logic": "규제 완화 시 렉라자와 같은 성공적인 신약이 다수 등장하여 K-바이오 산업이 크게 성장할 것이라고 주장.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "규제 완화는 오히려 검증되지 않은 부실한 신약 개발을 양산하여 K-바이오 산업 전체의 신뢰도를 하락시킬 수 있다.",
+    "confidence": 0.7,
+    "physiognomy_score": 50,
+    "timestamp": "추정 불가 (자막 없음)"
+  },
+  {
     "id": "mJ20VSBfRQA",
     "title": "긴급조정권 발언까지.. 가불기 걸린 삼성전자의 피해액 계산",
     "thumbnail": "https://i.ytimg.com/vi/mJ20VSBfRQA/hqdefault.jpg",
