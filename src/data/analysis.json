@@ -1,5 +1,19 @@
 [
   {
+    "id": "N9lmCfYu3UY",
+    "title": "주도 테마별 코스닥 대표기업에 투자하는 SOL 코스닥TOP10 ETF가 나왔습니다(SOL 코스닥TOP10 ETF)",
+    "thumbnail": "https://i.ytimg.com/vi/N9lmCfYu3UY/hqdefault.jpg",
+    "publishedAt": "2026-05-18T10:00:36Z",
+    "asset": "코스닥TOP10 기업 (ETF)",
+    "jeon_opinion": 0.7,
+    "jeon_logic": "코스닥 대표 기업에 투자하여 안정적인 수익을 추구할 수 있다고 주장",
+    "oracle_signal": "SELL",
+    "oracle_logic": "코스닥 대표 기업은 이미 고평가되어 있으며, 변동성에 취약하여 하락 위험이 크다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00 (영상 전체에 해당)"
+  },
+  {
     "id": "Gn1ykZ0LkvQ",
     "title": "삼성전자 총파업 예고에도 주가는 오르는 이유",
     "thumbnail": "https://i.ytimg.com/vi/Gn1ykZ0LkvQ/hqdefault.jpg",
