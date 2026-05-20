@@ -1,5 +1,19 @@
 [
   {
+    "id": "ny_FB9QDgws",
+    "title": "이민 갈 때 이거 모르면 세금 폭탄 맞습니다(ft.김한미 세무사 4부)",
+    "thumbnail": "https://i.ytimg.com/vi/ny_FB9QDgws/hqdefault.jpg",
+    "publishedAt": "2026-05-20T07:21:19Z",
+    "asset": "국내 주식",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "해외 이민 시 국내 주식에 대한 세금 문제 발생 가능성이 높음.",
+    "oracle_signal": "BUY",
+    "oracle_logic": "세금 문제를 해결하면 오히려 저평가된 국내 주식을 매수할 좋은 기회가 될 수 있다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "03:41"
+  },
+  {
     "id": "5jNcLQL_zQI",
     "title": "엔비디아 내일 실적발표에 코스피 운명이 달린 이유",
     "thumbnail": "https://i.ytimg.com/vi/5jNcLQL_zQI/hqdefault.jpg",
