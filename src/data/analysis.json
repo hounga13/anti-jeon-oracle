@@ -1,5 +1,19 @@
 [
   {
+    "id": "mcfSIpaw5-Y",
+    "title": "엔비디아 실적발표에 숨겨진 HBM 호재 (ft.삼성전자,SK하이닉스)",
+    "thumbnail": "https://i.ytimg.com/vi/mcfSIpaw5-Y/hqdefault.jpg",
+    "publishedAt": "2026-05-21T07:50:04Z",
+    "asset": "엔비디아",
+    "jeon_opinion": 0.7,
+    "jeon_logic": "엔비디아 실적 발표에 HBM 호재가 숨겨져 있으며, 삼성전자와 SK하이닉스에 긍정적인 영향을 미칠 것이다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "엔비디아의 실적 호조는 이미 주가에 선반영되었고, HBM 관련주는 과도한 기대감으로 인해 하락할 가능성이 높다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00"
+  },
+  {
     "id": "ny_FB9QDgws",
     "title": "이민 갈 때 이거 모르면 세금 폭탄 맞습니다(ft.김한미 세무사 4부)",
     "thumbnail": "https://i.ytimg.com/vi/ny_FB9QDgws/hqdefault.jpg",
