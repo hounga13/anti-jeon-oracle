@@ -1,5 +1,19 @@
 [
   {
+    "id": "L9O8J_iEsl8",
+    "title": "양자컴퓨터 주가가 다시 상승한 이유(ft.이재훈 작가 1부)",
+    "thumbnail": "https://i.ytimg.com/vi/L9O8J_iEsl8/hqdefault.jpg",
+    "publishedAt": "2026-05-23T00:34:27Z",
+    "asset": "아이온큐(IonQ)",
+    "jeon_opinion": 0.7,
+    "jeon_logic": "양자컴퓨터 기술 발전과 방산 산업 활용 가능성, 엔비디아와의 관계 등으로 인해 아이온큐 주가가 상승할 것이다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "양자컴퓨터 기술은 아직 초기 단계이며, 아이온큐는 과대평가되었고, 경쟁 심화로 인해 투자 매력이 감소할 것이다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "11:07"
+  },
+  {
     "id": "S4h6TQ2EmKA",
     "title": "니어AI LLM의 아버지의 조언 다음 부자는 토큰 경제에서 나옵니다(ft.Illia Polosukhin CEO)",
     "thumbnail": "https://i.ytimg.com/vi/S4h6TQ2EmKA/hqdefault.jpg",
