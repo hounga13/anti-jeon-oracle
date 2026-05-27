@@ -1,5 +1,19 @@
 [
   {
+    "id": "H9c72Dqb8GI",
+    "title": "코스피는 신고가, 그런데 코스닥은 왜 떨어지는 건가요?",
+    "thumbnail": "https://i.ytimg.com/vi/H9c72Dqb8GI/hqdefault.jpg",
+    "publishedAt": "2026-05-27T07:05:27Z",
+    "asset": "코스피",
+    "jeon_opinion": -0.8,
+    "jeon_logic": "코스피가 신고가를 경신했지만 코스닥은 하락하는 상황을 설명하며, 상승세가 제한적일 수 있음을 암시합니다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "코스피 신고가 이후 코스닥 하락은 오히려 저평가된 코스닥 종목 매수 기회가 될 수 있습니다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00 (제목 기준)"
+  },
+  {
     "id": "F4hLU_Seh3M",
     "title": "마이크론 20% 급등한 2가지 이유(ft.PER 16배)",
     "thumbnail": "https://i.ytimg.com/vi/F4hLU_Seh3M/hqdefault.jpg",
