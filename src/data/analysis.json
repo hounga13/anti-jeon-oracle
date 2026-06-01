@@ -1,5 +1,19 @@
 [
   {
+    "id": "O6LHJXglygU",
+    "title": "젠슨황 2차깐부회동, 이번에는 누굴까?(ft.LG와 하나 더)",
+    "thumbnail": "https://i.ytimg.com/vi/O6LHJXglygU/hqdefault.jpg",
+    "publishedAt": "2026-06-01T02:37:40Z",
+    "asset": "LG (및 협력 대상 기업)",
+    "jeon_opinion": -0.7,
+    "jeon_logic": "젠슨 황과의 2차 깐부 회동 대상으로 LG를 언급하며, 긍정적인 협력 가능성을 시사하는 듯 하지만, 실제 내용은 불확실하고 홍보 목적일 가능성이 있다.",
+    "oracle_signal": "SELL",
+    "oracle_logic": "LG와의 협력은 실질적인 이익으로 이어지지 못하고, 엔비디아에 종속되는 결과를 초래할 수 있다.",
+    "confidence": 0.6,
+    "physiognomy_score": 50,
+    "timestamp": "00:00 (영상 내용 전반)"
+  },
+  {
     "id": "jafw69ylMO8",
     "title": "이정도면 인수생각드는 미국 휴머노이드 로봇기업 (ft.Foundation.Bot)",
     "thumbnail": "https://i.ytimg.com/vi/jafw69ylMO8/hqdefault.jpg",
